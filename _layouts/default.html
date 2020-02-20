@@ -10,11 +10,19 @@ layout: compress
     {% endif %}
 
     <meta charset="utf-8">
+    <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
     <meta name=viewport content="width=device-width, initial-scale=1">
+
+    <meta name=description content="{{ site.bio }}">
     <meta name=author content="{{ site.name }}">
+    <meta property="og:image" content="{{ site.url }}/{{ site.picture }}">
+    <meta property="og:type" content="profile">
+
+    <meta name="naver-site-verification" content="ff48f6000698376263c9c0224b72b71888d49c27"/>
+    <meta name="google-site-verification" content="-t3fWlimVjkQriQuBmw5pB428J_ElAdiPgtWrKETYE0" />
 
     {% seo %}
-
+    
     {% include favicon.html %}
 
     <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
@@ -25,6 +33,9 @@ layout: compress
     {{ scss_sheet | scssify }}
     </style>
 
+    {% if page.use_math %}
+    {% include mathjax_support.html %}
+    {% endif %}
 </head>
 <body>
 
