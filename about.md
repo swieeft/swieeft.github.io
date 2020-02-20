@@ -3,56 +3,121 @@ title: About
 layout: page
 ---
 
-<p><div class="side-by-side">
-    <div class="toleft">
-        <img class="image" src="/assets/images/profile.jpg" alt="Alt Text">        
-    </div>
+# Resume
 
-    <div class="toright">
-        <h1>Seung-Joo, Han</h1>
-		<h4>"Carve a huge footprint with a tiny step."</h4>
-		<p>R&D engineer in company<br>
-		Seeking sustainable fun something<br>
-		Python newbie<br>		
-		Wannabe the Coding Monkey Spanner</p>
-    </div>
-</div></p>
+---
 
-<h2>Education</h2>
+# 박길남 (Park GilNam)
 
-<ul class="education-list">
-	<li>Konkuk University MS degree in Chemical Engineering (2017)<br>
-	- Advisor: <a class="link" href="http://home.konkuk.ac.kr/~ysmin">Prof. Yo-Sep, Min</a> (Chemisty of Materials & Devices Lab)</li>
-	<li>Konkuk University MS degree in Chemical Engineering (2014)</li>
-</ul>
+## iOS Developer
 
-<h2>Skills</h2>
+🍭달콤한 개발을 꿈꾸는 개발자입니다.
 
-<ul class="skill-list">
-	<li>Atomic Layer Deposition (ALD)</li>
-	<li>Thin Film Growth</li>
-	<li>Thin Film Characterization</li>
-	<li>Granulation using Ceramic Powder</li>
-	<!-- <li>Industrial Gelation using flavor and ingredient</li> -->
-	<li>OriginLab</li>
-	<li>Git/<a class="link" href="https://github.com/hsj00">Github</a></li>
-	<li>Python</li>
-</ul>
+사람들의 생활을 더욱 편하고 즐겁게 그리고 행복하게 만들어 주는 개발자가 되겠습니다.
 
-<h2>Activities</h2>
-<h4>Poster presentations</h4>
-<ul class="poster">
-   <li><strong>Korean Conference on Semiconductors</strong><br>
-    - The 23rd Korean Conference on Semiconductors, 2016, (Gangwon-do, S. Korea), “<em>Growth and Characterization of ZnO Thin Films Grown by Atomic Layer Deposition from Diethylzinc and 1, 5-Pentanediol</em>”</li>
-	<li><strong>The Korean Institute of Chemical Engineers (KIChE)</strong>
-    - KIChE Spring symposium, 2015, (Jeju-do, S. Korea), “<em>Diode Characteristics of n-ZnO/p-Si Heterojunction fabricated by Atomic Layer Deposition Using Diethylzinc and 1, 5-Pentanediol</em>”</li>
-	<li><strong>The Korean Institute of Chemical Engineers (KIChE)</strong>
-    KIChE Fall symposium, 2014, (Daejeon, S. Korea), “<em>Atomic layer deposition of ZnO using alcohol as an oxidant</em>”</li>
-</ul>
+---
 
-<h4>Publications (SCI)</h4>
-<ul class="publication">
-	<li><strong>Seung-Joo Han</strong>, Seokhee Shin, Sungjoon Kim, Dong-Hyun Ko, Zhenyu Jin, Sun Young Lee, and Yo-Sep Min, “<a class="link" href="http://home.konkuk.ac.kr/~ysmin/papers/Han_Chem_Mater_2017_29_3371.pdf"><em>1,5-pentanediol as an oxygen precursor for atomic layer deposition of zinc oxide thin films</em></a>”, <b>Chem. Mater.</b>, 29, 3371 (2017)</li>
-	<li>Jae-Yup Kim, Jin Soo Kang, Junyoung Shin, Jin Kim, <strong>Seung-Joo Han</strong>, Jongwoo Park, Yo-Sep Min, Min Jae Ko and Yung-Eun Sung, “<a class="link" href="http://home.konkuk.ac.kr/~ysmin/papers/JY%20Kim%20Nanoscale%202015%207%208171.pdf"><em>Highly uniform and vertically aligned SnO2 nanochannel arrays for photovoltaic applications</em></a>”, <b>Nanoscale</b>, 7, 8368 (2015)</li>
-	<li>Zhenyu Jin, Seokhee Shin, Do Hyun Kwon, <strong>Seung-Joo Han</strong> and Yo-Sep Min “<a class="link" href="http://home.konkuk.ac.kr/~ysmin/papers/Jin_Nanoscale_2014_6_14453.pdf"><em>Novel chemical route for atomic layer deposition of MoS2 thin film on SiO2/Si substrate</em></a>”, <b>Nanoscale</b>, 6, 14453 (2014)</li>
-</ul>
+### 📬 E-Mail : **[swieeft89@gmail.com](mailto:swieeft89@gmail.com)**
+
+---
+
+## 👨🏻‍💻 Career
+
+**iOS 앱 개발 이후**
+
+---
+
+- **[생산적문화활동](https://www.murmuring.fun/)**
+    - 2020. 01. 02 ~ 재직중
+    - 정직원
+    - iOS App 개발
+
+- **[브레인워시](http://www.fantasyleaguer.co.kr/)**
+    - 2019. 04. 29 ~ 2019. 09. 30
+    - 정직원
+    - iOS App 개발
+
+- **[헬스커넥트](https://www.hconnect.co.kr/)**
+    - 2019. 01. 07 ~ 2019. 04. 06
+    - 프리랜서
+    - iOS App 개발
+
+- **[지니웍스](http://www.genieworks.net/)**
+    - 2018. 05. 02 ~ 2018. 12. 31
+    - 정직원
+    - iOS App 개발
+
+**iOS 앱 개발 이전**
+
+---
+
+- [**이엔지소프트**](http://www.engsoft.kr/)
+    - 2016. 06. 28 ~ 2017. 10. 31
+    - 정직원
+    - C# Winform 프로그램 개발
+- **[소프트캠프](https://www.softcamp.co.kr/)**
+    - 2015. 03. 16 ~ 2016. 01. 29
+    - 정직원
+    - DRM 솔루션 개발
+
+---
+
+## 📝 Blog
+
+[뀔뀔(swieeft)의 개발새발기](https://www.notion.so/swieeft-3324cfd36164460d968d7d2545f92dab)
+
+---
+
+## 📚 Stack
+
+- Swift
+- iOS
+- Git
+- RxSwift
+- ReactorKit
+
+---
+
+## 📱 Project
+
+진행했던 프로젝트 목록입니다. 맨 위가 가장 최근에 작업한 프로젝트입니다.
+
+### 개인 프로젝트
+
+---
+
+[SwieeftUIBezierPath](Resume/SwieeftUIBezierPath.md)
+
+[SwieeftImageViewer](Resume/SwieeftImageViewer.md)
+
+[CustomView](Resume/CustomView.md)
+
+[DrawingRecorder](Resume/DrawingRecorder.md)
+
+[DotPattern-UIBezierPath](Resume/DotPattern%20UIBezierPath.md)
+
+[삼시묵상](Resume/Untitled.md)
+
+### 회사 프로젝트
+
+---
+
+[머머링 - 일상을 담는 목소리](Resume/Untitled%201.md)
+
+[판타지리거 - Fantasy Leaguer](Resume/Fantasy%20Leaguer.md)
+
+[코치코치당뇨](Resume/Untitled%202.md)
+
+[파킹온 - ParkingOn](Resume/ParkingOn.md)
+
+[픽앤유니크 - pick&uniq](Resume/pick%20uniq.md)
+
+### 외주 프로젝트
+
+---
+
+[피플 - People](Resume/People.md)
+
+---
+
+- Resume 양식은 아래 링크를 참조하였습니다.

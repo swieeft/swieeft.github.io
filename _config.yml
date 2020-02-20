@@ -13,9 +13,9 @@ picture: assets/images/profile.JPG
 
 # If you want to include your resume, set to true
 # and specify source (external or local).
-resume: false
-resume-external: false
-resume-url: resume/
+resume: true
+resume-external: true
+resume-url: https://www.notion.so/swieeft/Resume-269802c635b44285b6165b9a442be1f5
 
 url: https://swieeft.github.io
 # your url: https://swieeft.github.io
@@ -83,7 +83,7 @@ width: normal
 projects: true
 
 # if you don't need "about" or "blog", comment them out below
-about: true
+about: false
 blog: true
 
 # do you want to show the "read time" of the posts?
