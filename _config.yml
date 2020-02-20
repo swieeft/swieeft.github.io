@@ -112,7 +112,7 @@ plugins:
   - jekyll-admin
 
 jekyll-mentions:
-  base_url: /indigo/
+  base_url: /
 
 compress_html:
   ignore:
