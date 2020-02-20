@@ -126,7 +126,7 @@ plugins:
 
 
 jekyll-mentions:
-    base_url: https://github.com
+    base_url: /
 
 compress_html:
     ignore:
