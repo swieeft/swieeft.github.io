@@ -111,8 +111,8 @@ plugins:
   - jemoji
   - jekyll-admin
 
-jekyll-mentions:
-  base_url: /
+#jekyll-mentions:
+#  base_url: /
 
 compress_html:
   ignore:
