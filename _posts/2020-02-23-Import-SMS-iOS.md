@@ -46,72 +46,72 @@ CPID와 CPPWD를 전달 받으셨으면 아임포트 관리자 페이지([http:/
 CPID와 CPPWD 연동이 잘 되어 있다면 아래 HTML 스크립트로 웹 페이지를 만들면 본인인증 화면에 나오게 됩니다. 
 
 ```html
-  <!DOCTYPE html>
-  <html>
-  <head>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js" ></script>
-  <script type="text/javascript" src="https://cdn.iamport.kr/js/iamport.payment-1.1.7.js" ></script>
-  </head>
-  <body>
-  <!-- 아임포트 자바스크립트는 jQuery 기반으로 개발되었습니다 -->
-  
-  <script type="text/javascript">
-  // 모바일 에이전트 구분
-  var isMobile = {
-      Android: function () {
-          return navigator.userAgent.match(/Android/i) == null ? false : true;
-      },
-      IOS: function () {
-          return navigator.userAgent.match(/iPhone|iPad|iPod/i) == null ? false : true;
-      }
-  };
-  
-  var IMP = window.IMP; // 생략가능
-  IMP.init('imp00000000'); // 'imp00000000' 대신 부여받은 "가맹점 식별코드"를 사용
-  
-  /* 중략 */
-  IMP.certification({
-      merchant_uid : 'merchant_' + new Date().getTime()
-  }, function(rsp) {
-      console.log(JSON.stringify(rsp));
-      if ( rsp.success ) {
-          // 인증성공
-          $.ajax({
-                      url: "https://www.myservice.com/certifications", // 현재 서비스의 웹서버로 인증된 사용자 정보 요청
-                      method: "POST",
-                      headers: { "Content-Type": "application/json" },
-                      data: { imp_uid: rsp.imp_uid }
-                  }).done(function() {
-                      // 이후 Business Logic 처리
-                      takeResponseAndHandle(rsp)
-                  });
-      } else {
-          // 인증취소 또는 인증실패
-          if(isMobile.IOS()){
-              // 브릿지 연동 : authFail는 브릿지 네임 (프로젝트에 맞게 설정 필요)
-              webkit.messageHandlers.authFail.postMessage(JSON.stringify(rsp));
-          }
-      }
-  });
-  
-  function takeResponseAndHandle(rsp) {
-      if ( rsp.success ) {
-          // 인증성공
-          if(isMobile.IOS()){
-              // 브릿지 연동 : authSuccess는 브릿지 네임 (프로젝트에 맞게 설정 필요)
-              webkit.messageHandlers.authSuccess.postMessage(JSON.stringify(rsp));
-          }
-      } else {
-          // 인증취소 또는 인증실패
-          if(isMobile.IOS()){
-              // 브릿지 연동 : authFail는 브릿지 네임 (프로젝트에 맞게 설정 필요)
-              webkit.messageHandlers.authFail.postMessage(JSON.stringify(rsp));
-          }
-      }
-  }
-  
-  </script>
-  </body>
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js" ></script>
+<script type="text/javascript" src="https://cdn.iamport.kr/js/iamport.payment-1.1.7.js" ></script>
+</head>
+<body>
+<!-- 아임포트 자바스크립트는 jQuery 기반으로 개발되었습니다 -->
+
+<script type="text/javascript">
+// 모바일 에이전트 구분
+var isMobile = {
+    Android: function () {
+        return navigator.userAgent.match(/Android/i) == null ? false : true;
+    },
+    IOS: function () {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i) == null ? false : true;
+    }
+};
+
+var IMP = window.IMP; // 생략가능
+IMP.init('imp00000000'); // 'imp00000000' 대신 부여받은 "가맹점 식별코드"를 사용
+
+/* 중략 */
+IMP.certification({
+    merchant_uid : 'merchant_' + new Date().getTime()
+}, function(rsp) {
+    console.log(JSON.stringify(rsp));
+    if ( rsp.success ) {
+        // 인증성공
+        $.ajax({
+                    url: "https://www.myservice.com/certifications", // 현재 서비스의 웹서버로 인증된 사용자 정보 요청
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    data: { imp_uid: rsp.imp_uid }
+                }).done(function() {
+                    // 이후 Business Logic 처리
+                    takeResponseAndHandle(rsp)
+                });
+    } else {
+        // 인증취소 또는 인증실패
+        if(isMobile.IOS()){
+            // 브릿지 연동 : authFail는 브릿지 네임 (프로젝트에 맞게 설정 필요)
+            webkit.messageHandlers.authFail.postMessage(JSON.stringify(rsp));
+        }
+    }
+});
+
+function takeResponseAndHandle(rsp) {
+    if ( rsp.success ) {
+        // 인증성공
+        if(isMobile.IOS()){
+            // 브릿지 연동 : authSuccess는 브릿지 네임 (프로젝트에 맞게 설정 필요)
+            webkit.messageHandlers.authSuccess.postMessage(JSON.stringify(rsp));
+        }
+    } else {
+        // 인증취소 또는 인증실패
+        if(isMobile.IOS()){
+            // 브릿지 연동 : authFail는 브릿지 네임 (프로젝트에 맞게 설정 필요)
+            webkit.messageHandlers.authFail.postMessage(JSON.stringify(rsp));
+        }
+    }
+}
+
+</script>
+</body>
 </html>
 ```
 
