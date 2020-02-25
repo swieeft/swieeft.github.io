@@ -52,73 +52,72 @@ use_math: false
 
     - **UIView 기본 초기화**
 
-        뷰를 초기화 하기 위해 기본적 초기화 메서드를 작성합니다.
+      뷰를 초기화 하기 위해 기본적 초기화 메서드를 작성합니다.
         
-        ```swift
-        class ReaderView: UIView {
-          
-          weak var delegate: ReaderViewDelegate?
+      ```swift
+      class ReaderView: UIView {
+        
+        weak var delegate: ReaderViewDelegate?
 
-          var previewLayer: AVCaptureVideoPreviewLayer?
-          var centerGuideLineView: UIView?
+        var previewLayer: AVCaptureVideoPreviewLayer?
+        var centerGuideLineView: UIView?
 
-          var captureSession: AVCaptureSession?
+        var captureSession: AVCaptureSession?
 
-          var isRunning: Bool {
-            guard let captureSession = self.captureSession else {
-              return false
-            }
-
-            return captureSession.isRunning
+        var isRunning: Bool {
+          guard let captureSession = self.captureSession else {
+            return false
           }
 
-          override init(frame: CGRect) {
-            super.init(frame: frame)
-            self.initialSetupView()
-          }
-          
-          required init?(coder aDecoder: NSCoder) {
-            super.init(coder: aDecoder)
-            self.initialSetupView()
-          }
+          return captureSession.isRunning
         }
-        ```
+
+        override init(frame: CGRect) {
+          super.init(frame: frame)
+          self.initialSetupView()
+        }
+        
+        required init?(coder aDecoder: NSCoder) {
+          super.init(coder: aDecoder)
+          self.initialSetupView()
+        }
+      }
+      ```
     
     - **리더기로 인식 할 코드 종류 설정**
 
-        리더기가 인식할 수 있는 코드 타입을 설정합니다. 본인의 프로젝트에 맞게 설정하시면 될 것 같습니다. 종류는 아래 링크에 자세히 나와 있으며, 코드 타입에 대한 설명은 각각 검색 해보시면 보다 자세한 내용을 확인하실 수 있습니다.
+      리더기가 인식할 수 있는 코드 타입을 설정합니다. 본인의 프로젝트에 맞게 설정하시면 될 것 같습니다. 종류는 아래 링크에 자세히 나와 있으며, 코드 타입에 대한 설명은 각각 검색 해보시면 보다 자세한 내용을 확인하실 수 있습니다.
 
-        [https://developer.apple.com/documentation/avfoundation/avmetadataobject/objecttype](https://developer.apple.com/documentation/avfoundation/avmetadataobject/objecttype)
+      [https://developer.apple.com/documentation/avfoundation/avmetadataobject/objecttype](https://developer.apple.com/documentation/avfoundation/avmetadataobject/objecttype)
 
-        ```swift
-        // 인식할 수 있는 코드 타입
-        let metadataObjectTypes: [AVMetadataObject.ObjectType] = [
-        .upce, 
-        .code39, 
-        .code39Mod43, 
-        .code93, 
-        .code128, 
-        .ean8, 
-        .ean13, 
-        .aztec, 
-        .pdf417, 
-        .itf14, 
-        .dataMatrix, 
-        .interleaved2of5, 
-        .qr]
-        ```
+      ```swift
+      let metadataObjectTypes: [AVMetadataObject.ObjectType] = [
+      .upce, 
+      .code39, 
+      .code39Mod43, 
+      .code93, 
+      .code128, 
+      .ean8, 
+      .ean13, 
+      .aztec, 
+      .pdf417, 
+      .itf14, 
+      .dataMatrix, 
+      .interleaved2of5, 
+      .qr
+      ]
+      ```
                                                                                                             
-
     - **AVCaptureSession 초기화 및 RederView 초기화 하기**
 
-        리더기의 핵심은 AVCaptureSession을 활용하여 코드를 인식하는 것입니다. 그러기 위해선 AVCaptureSession의 입,출력을 설정하는 작업이 필요합니다.
+      리더기의 핵심은 AVCaptureSession을 활용하여 코드를 인식하는 것입니다. 그러기 위해선 AVCaptureSession의 입,출력을 설정하는 작업이 필요합니다.
         
-        ```swift
-      // AVCaptureSession 초기화 및 ReaderView 초기화
+      ```swift
+      /** AVCaptureSession 초기화 및 ReaderView 초기화 **/
       private func initialSetupView() {
         self.clipsToBounds = true
         
-        // AVCaptureSession 인스턴스 생성
+        /** AVCaptureSession 인스턴스 생성 **/
         self.captureSession = AVCaptureSession()
         
         guard let captureSession = self.captureSession else {
@@ -126,12 +125,12 @@ use_math: false
           return
         }
         
-        // 카메라를 이용하기 때문에 .video로 설정
+        /** 카메라를 이용하기 때문에 .video로 설정 **/
         guard let videoCaptureDevice = AVCaptureDevice.default(for: .video) else {
           return
         }
         
-        // 지정된 장치를 사용하도록 입력을 초기화 하는 작업
+        /** 지정된 장치를 사용하도록 입력을 초기화 하는 작업 **/
         let videoInput: AVCaptureDeviceInput
           
         do {
@@ -141,7 +140,7 @@ use_math: false
           return
         }
         
-        // 위에 만들어진 입력을 AVCaptureSession에 추가
+        /** 위에 만들어진 입력을 AVCaptureSession에 추가 **/
         if captureSession.canAddInput(videoInput) {
           captureSession.addInput(videoInput)
         } else {
@@ -149,8 +148,8 @@ use_math: false
           return
         }
         
-        // 출력을 AVCaptureSession에 추가
-        // 세션이 지정된 메타 데이터를 처리하기 위해 AVCaptureMetadataOutput를 출력으로 지정
+        /** 출력을 AVCaptureSession에 추가
+            세션이 지정된 메타 데이터를 처리하기 위해 AVCaptureMetadataOutput를 출력으로 지정 **/
         let metadataOutput = AVCaptureMetadataOutput()
           
         if captureSession.canAddOutput(metadataOutput) {
@@ -176,10 +175,9 @@ use_math: false
 
     - **AVCaptureVideoPreviewLayer 생성 및 초기화**
 
-        AVCaptureVideoPreviewLayer은 실제 AVCaptureSession이 실행되어 보여지는 곳입니다. AVCaptureSession 설정을 완료한 후에 Layer를 생성하여 만들어진 AVCaptureSession를 넣어 초기화를 해주면 ReaderView 초기화 작업이 완료 됩니다.
+      AVCaptureVideoPreviewLayer은 실제 AVCaptureSession이 실행되어 보여지는 곳입니다. AVCaptureSession 설정을 완료한 후에 Layer를 생성하여 만들어진 AVCaptureSession를 넣어 초기화를 해주면 ReaderView 초기화 작업이 완료 됩니다.
 
-        ```swift
-      // AVCaptureSession이 실행 될 Layer 객체
+      ```swift
       private func setPreviewLayer() {
         guard let captureSession = self.captureSession else {
           return
@@ -197,10 +195,10 @@ use_math: false
 
     - **(선택) AVCaptureVideoPreviewLayer 중앙 가이드라인 만들기**
 
-        이 부분은 필수 사항이 아닙니다. 편의를 위해 추가한 내용이기 때문에 필요하시면 추가하시거나, 다르게 사용하고 싶으시면 프로젝트에 맞게 변경해서 사용하시면 됩니다.
+      이 부분은 필수 사항이 아닙니다. 편의를 위해 추가한 내용이기 때문에 필요하시면 추가하시거나, 다르게 사용하고 싶으시면 프로젝트에 맞게 변경해서 사용하시면 됩니다.
 
-        ```swift
-      // 캡쳐 화면 중앙 가이드 라인 (선택)
+      ```swift
+      /** 캡쳐 화면 중앙 가이드 라인 (선택) **/
       private func setCenterGuideLineView() {
         let centerGuideLineView = UIView()
         centerGuideLineView.translatesAutoresizingMaskIntoConstraints = false
@@ -223,9 +221,9 @@ use_math: false
 
     - **ViewController 코드**
 
-        AVCaptureSession이 현재 실행 중이지 않다면 세션을 시작하고, 실행 중이라면 세션을 중지합니다.
+      AVCaptureSession이 현재 실행 중이지 않다면 세션을 시작하고, 실행 중이라면 세션을 중지합니다.
 
-        ```swift
+      ```swift
       @IBOutlet weak var readerView: ReaderView!
     
       @IBAction func scanButtonAction(_ sender: UIButton) {
@@ -241,7 +239,7 @@ use_math: false
 
     - **AVCaptureSession 시작 - ReaderView 코드**
     
-        ```swift
+      ```swift
       func start() {
         self.captureSession?.startRunning()
       }
@@ -249,9 +247,9 @@ use_math: false
 
     - **AVCaptureSession 중지 - ReaderView 코드**
 
-        isButtonTap은 세션이 중지 된 이유가 Stop 버튼으로 중지 된 것인지 코드 인식이 완료 되어서 중지 된 것인지 확인하기 위한 것입니다.
+      isButtonTap은 세션이 중지 된 이유가 Stop 버튼으로 중지 된 것인지 코드 인식이 완료 되어서 중지 된 것인지 확인하기 위한 것입니다.
 
-        ```swift
+      ```swift
       func stop(isButtonTap: Bool) {
         self.captureSession?.stopRunning()
       
@@ -293,41 +291,49 @@ use_math: false
 
     - **이벤트 상태**
 
-            enum ReaderStatus {
-              case success(_ code: String?)   // 코드 인식이 성공 했을 때 이벤트입니다. 인식 된 Code를 함께 전달합니다.
-              case fail                       // AVCaptureSession 생성이 실패했을 경우 발생하는 이벤트입니다.
-              case stop(_ isButtonTap: Bool)  // 코드 인식을 중지 했을 때 발생하는 이벤트입니다. isButtonTap을 통해 어떻게 중지 되었는지 확인합니다
-            }
+      ```swift
+      enum ReaderStatus {
+        case success(_ code: String?)   /** 코드 인식이 성공 했을 때 이벤트입니다. 인식 된 Code를 함께 전달합니다. **/
+        case fail                       /** AVCaptureSession 생성이 실패했을 경우 발생하는 이벤트입니다. **/
+        case stop(_ isButtonTap: Bool)  /** 코드 인식을 중지 했을 때 발생하는 이벤트입니다. isButtonTap을 통해 어떻게 중지 되었는지 확인합니다 **/
+      }
+      ```
 
     - **프로토콜 정의**
 
-            protocol ReaderViewDelegate: class {
-                func readerComplete(status: ReaderStatus)
-            }
+      ```swift
+      protocol ReaderViewDelegate: class {
+          func readerComplete(status: ReaderStatus)
+      }
+      ```
 
     - **Delegate 호출방법**
 
-            // success
-            self.delegate?.readerComplete(status: .success(code))
-            // fail
-            self.delegate?.readerComplete(status: .fail)
-            // stop
-            self.delegate?.readerComplete(status: .stop(isButtonTap))
+      ```swift
+      /** success **/
+      self.delegate?.readerComplete(status: .success(code))
+      /** fail **/
+      self.delegate?.readerComplete(status: .fail)
+      /** stop **/
+      self.delegate?.readerComplete(status: .stop(isButtonTap))
+      ```
 
 5. **ViewController에서 Delegate 처리**
 
-        extension ViewController: ReaderViewDelegate {
-            func readerComplete(status: ReaderStatus) {
-            switch status {
-            case let .success(code):
-                    break
-            case .fail:
-                    break
-            case let .stop(isButtonTap):
-                    break
-            }
-            }
+    ```swift
+    extension ViewController: ReaderViewDelegate {
+      func readerComplete(status: ReaderStatus) {
+        switch status {
+        case let .success(code):
+                break
+        case .fail:
+                break
+        case let .stop(isButtonTap):
+                break
         }
+      }
+    }
+    ```
 
 ### 마무리
 
