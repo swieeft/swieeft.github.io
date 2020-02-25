@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://hsj00.github.io/sitemap.xml
+Sitemap: http://swieeft.github.io/sitemap.xml
