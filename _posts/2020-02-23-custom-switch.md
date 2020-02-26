@@ -7,7 +7,7 @@ tag:
     - Swift
 headerImage: false
 image:
-description: [iOS] 커스텀 스위치(Custom Switch) 만들기
+description: 커스텀 스위치(Custom Switch) 만들기
 category: blog
 author: swieeft
 externalLink: true

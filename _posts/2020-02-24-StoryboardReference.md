@@ -7,7 +7,7 @@ tag:
     - Xcode
 headerImage: false
 image:
-description: [iOS] 스토리보드 레퍼런스(Storyboard Reference) 사용방법
+description: 스토리보드 레퍼런스(Storyboard Reference) 사용방법
 category: blog
 author: swieeft
 externalLink: true

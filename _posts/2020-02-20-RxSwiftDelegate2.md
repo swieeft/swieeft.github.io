@@ -1,5 +1,5 @@
 ---
-title: "RxSwift에서 Delegate 패턴 사용하기 (2/2)"
+title: "[RxSwift] RxSwift에서 Delegate 패턴 사용하기 (2/2)"
 layout: post
 date: 2020-02-20 17:40
 tag:

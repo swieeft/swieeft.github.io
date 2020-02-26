@@ -7,7 +7,7 @@ tag:
     - Swift
 headerImage: false
 image:
-description: [iOS] QR, Barcode 리더기 만들기
+description: QR, Barcode 리더기 만들기
 category: blog
 author: swieeft
 externalLink: true

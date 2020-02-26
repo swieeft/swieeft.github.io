@@ -7,7 +7,7 @@ tag:
     - Xcode
 headerImage: false
 image:
-description: [iOS] Development로 Archive하여 테스트 버전 배포하기
+description: Development로 Archive하여 테스트 버전 배포하기
 category: blog
 author: swieeft
 externalLink: true
