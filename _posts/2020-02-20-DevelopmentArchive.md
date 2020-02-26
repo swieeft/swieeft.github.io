@@ -1,5 +1,5 @@
 ---
-title: "Development로 Archive하여 테스트 버전 배포하기"
+title: "[iOS] Development로 Archive하여 테스트 버전 배포하기"
 layout: post
 date: 2020-02-20 18:20
 tag:
@@ -7,7 +7,7 @@ tag:
     - Xcode
 headerImage: false
 image:
-description: Development로 Archive하여 테스트 버전 배포하기
+description: [iOS] Development로 Archive하여 테스트 버전 배포하기
 category: blog
 author: swieeft
 externalLink: true

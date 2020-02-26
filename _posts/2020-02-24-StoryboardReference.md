@@ -1,5 +1,5 @@
 ---
-title: "스토리보드 레퍼런스(Storyboard Reference) 사용방법"
+title: "[iOS] 스토리보드 레퍼런스(Storyboard Reference) 사용방법"
 layout: post
 date: 2020-02-24 13:50
 tag:
@@ -7,7 +7,7 @@ tag:
     - Xcode
 headerImage: false
 image:
-description: 스토리보드 레퍼런스(Storyboard Reference) 사용방법
+description: [iOS] 스토리보드 레퍼런스(Storyboard Reference) 사용방법
 category: blog
 author: swieeft
 externalLink: true

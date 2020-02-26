@@ -1,5 +1,5 @@
 ---
-title: "커스텀 스위치(Custom Switch) 만들기"
+title: "[iOS] 커스텀 스위치(Custom Switch) 만들기"
 layout: post
 date: 2020-02-23 21:20
 tag:
@@ -7,7 +7,7 @@ tag:
     - Swift
 headerImage: false
 image:
-description: 커스텀 스위치(Custom Switch) 만들기
+description: [iOS] 커스텀 스위치(Custom Switch) 만들기
 category: blog
 author: swieeft
 externalLink: true

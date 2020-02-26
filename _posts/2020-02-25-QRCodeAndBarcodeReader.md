@@ -1,5 +1,5 @@
 ---
-title: "QR, Barcode 리더기 만들기"
+title: "[iOS] QR, Barcode 리더기 만들기"
 layout: post
 date: 2020-02-25 18:40
 tag:
@@ -7,7 +7,7 @@ tag:
     - Swift
 headerImage: false
 image:
-description: QR, Barcode 리더기 만들기
+description: [iOS] QR, Barcode 리더기 만들기
 category: blog
 author: swieeft
 externalLink: true
