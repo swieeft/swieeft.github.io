@@ -4,6 +4,8 @@ layout: post
 date: 2020-03-02 17:00
 tag:
     - Tips
+    - Github io
+    - Notion
 headerImage: false
 image:
 description: Notion으로 글 작성하고 Github io로 글 옮기기
