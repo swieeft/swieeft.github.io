@@ -18,7 +18,7 @@ use_math: false
 ---
 안녕하세요. 오늘은 UIBezierPath의 Arc를 쉽게 그리는 방법에 대해 알아보려고 합니다.
 
-UIBezierPath는 공식 문서에 이렇게 서명하고 있습니다.
+UIBezierPath는 공식 문서에 이렇게 설명하고 있습니다.
 
 > A path that consists of straight and curved line segments that you can render in your custom views. <br>
 > [UIBezierPath](https://developer.apple.com/documentation/uikit/uibezierpath)
@@ -254,7 +254,7 @@ convenience init(arcCenter center: CGPoint,
         }
         ```
 
-        여기서 startAngle을 + 해주는 이유는 앞에 공식 **(angle * (.pi / 180))** 에서  나오는 값은 0도에서 부터 계산 된 Angle 값이여서 거기에 startAngle 만큼 이동 시키기 위해 +를 해주고 있습니다.
+        공식 **(angle * (.pi / 180))** 에서 나오는 Angle 값은 0도를 기준으로 계산 된 Angle 값이여서 startAngle 만큼을 더해주어야 제대로 된 End Angle 값을 얻을 수 있습니다.
 
 - **Arc 그리기**
     - Arc 그리기 메서드
@@ -291,7 +291,7 @@ convenience init(arcCenter center: CGPoint,
 
 ---
 
-지금까지 좀 더 손 쉽게 UIBezierPath의 Arc 그리는 법을 알아 보았습니다.
+지금까지 좀 더 쉽게 UIBezierPath의 Arc 그리는 법을 알아 보았습니다.
 
 처음 UIBezierPath를 이용해서 작업을 할 때 Arc 때문에 몇 일을 고생한 기억이 있어 자료를 찾아서 만들어 보게 되었습니다.
 
