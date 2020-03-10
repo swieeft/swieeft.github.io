@@ -9,7 +9,7 @@ description: 개발을 하면서 겪었던 개발새발기를 정리하는 공�
 # better with square images
 external-image: false
 # gravatar: 2a619ea3524e446a30249f40fae2cfad
-picture: assets/images/profile.JPG
+picture: assets/images/profile.png
 
 # If you want to include your resume, set to true
 # and specify source (external or local).
@@ -74,7 +74,7 @@ authors:
     name: Park GilNam
     bio: iOS Developer
     external-image: false
-    picture: assets/images/profile.jpg
+    picture: assets/images/profile.png
     github: https://swieeft.github.io
 
 # do you want a larger site? change the option below
