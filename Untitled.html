@@ -1,0 +1,597 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>앱 스토어 심사 제출 및 배포하기</title><style>
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	opacity: 0.5;
+}
+
+.sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, KaiTi, STKaiTi, '华文楷体', KaiTi_GB2312, '楷体_GB2312', serif; }
+.mono { font-family: Nitti, 'Microsoft YaHei', '微软雅黑', monospace; }
+.pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .code { font-family: Source Code Pro, 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, KaiTi, STKaiTi, '华文楷体', KaiTi_GB2312, '楷体_GB2312', serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .mono { font-family: PT Mono, Nitti, 'Microsoft YaHei', '微软雅黑', monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="61488e78-3dba-44fc-bd70-4eb8fbc5a36d" class="page sans"><header><h1 class="page-title">앱 스토어 심사 제출 및 배포하기</h1></header><div class="page-body"><p id="9bdad3aa-5421-4754-a5c3-939f3d9d8779" class="">iOS 앱 업데이트를 위해서 심사 제출 및 배포하는 방법에 대해 알아보도록 하겠습니다.</p><p id="235288fa-27f1-4f9a-8398-9fb668ba0c0c" class="">이 문서는 이미 Xcode에서 빌드 된 바이너리가 업로드 된 후의 과정을 설명하고 있습니다.</p><p id="37961e2b-6f27-4fc0-b7d9-400c8d9b8f8e" class="">
+</p><h3 id="2d83150d-ba39-458b-97a4-ba24854a5d89" class=""><strong>업데이트를 할 앱으로 이동하기</strong></h3><hr id="823a9179-2c62-4ba3-adc2-b4883f940027"/><ol id="7c8efd65-0e8e-4373-89fd-f65599b90b79" class="numbered-list" start="1"><li><strong>앱스토어 커넥트로 이동</strong><p id="98415cce-3cd6-4796-a22a-57ad7dbc3e9b" class=""><a href="https://appstoreconnect.apple.com/">https://appstoreconnect.apple.com/</a></p><p id="285e931b-e333-4666-9918-2abc91f4c51a" class="">
+</p></li></ol><ol id="cb8389f4-9c45-4b9d-bf2d-cc13dd384b47" class="numbered-list" start="2"><li><strong>나의 앱 메뉴로 이동</strong><figure id="52a465cc-eaea-4d9f-ba11-99b455fd6581" class="image"><a href="Untitled/_2020-03-17__4.26.33.png"><img style="width:480px" src="Untitled/_2020-03-17__4.26.33.png"/></a></figure><p id="a7b56068-b220-4613-b0ed-cba3bf2312a0" class="">
+</p></li></ol><ol id="d8cad806-11a8-4445-a0b8-a9be0399b321" class="numbered-list" start="3"><li><strong>업데이트 할 앱 선택</strong><figure id="979ff599-890f-4de5-ab34-84f51331029b" class="image"><a href="Untitled/_2020-03-17__4.29.42.png"><img style="width:1646px" src="Untitled/_2020-03-17__4.29.42.png"/></a></figure><p id="9f8372a5-949f-4891-85a7-0c4b16a4eccb" class="">
+</p></li></ol><h3 id="6f10a87d-a116-4ea2-988f-c3ce6ba5fa32" class="">업데이트 할 버전 생성 및 이동</h3><hr id="bfb44a21-41e5-46c6-a486-45d29e636257"/><ol id="861dc427-4834-4031-a801-8dc275dddd8e" class="numbered-list" start="1"><li><strong>업데이트 할 버전 생성</strong><figure id="99da4e4c-5fa2-417b-b9c1-348ec35817fc" class="image"><a href="Untitled/_2020-03-17__4.30.20.png"><img style="width:240px" src="Untitled/_2020-03-17__4.30.20.png"/></a></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="85ffd2e9-547e-46b4-98a2-41bb00ad0862"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">버전 및 플랫폼을 클릭 후 iOS를 선택하면 버전 입력하는 창이 나타납니다. 그 창에서 업데이트 할 버전을 입력하시면 됩니다.</div></figure><p id="8f4a3f33-b9c3-470a-9362-7dcd7cfcb82f" class="">
+</p></li></ol><ol id="20e33f43-f5ad-4829-a2fb-850d9208d0c6" class="numbered-list" start="2"><li><strong>업데이트 할 버전 선택</strong><figure id="bc8db315-e7f9-4927-94b0-238bcb653536" class="image"><a href="Untitled/_2020-03-17__4.32.54.png"><img style="width:240px" src="Untitled/_2020-03-17__4.32.54.png"/></a></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="34919f17-257b-4847-b0b3-630d1f99b323"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">업데이트 할 버전을 선택하시면 됩니다. 여기서는 1.6.1 버전이 업데이트 되는 버전이기 때문에 1.6.1을 선택하였습니다.</div></figure></li></ol><p id="cc5ae397-479d-464e-8389-06fe35f7eba7" class="">
+</p><h3 id="002ff7fc-71f9-4d50-81e9-cfc969c90507" class="">앱 내용 입력</h3><hr id="c5f471a9-fa44-4179-ba0b-bbd350426186"/><ol id="ed9b9a79-fcf6-4d4d-a2a3-e46cf0ce3768" class="numbered-list" start="1"><li><strong>업데이트 내용 입력</strong><figure id="b907138e-50ba-4df0-8be0-691891640b67" class="image"><a href="Untitled/_2020-03-17__4.36.50.png"><img style="width:2792px" src="Untitled/_2020-03-17__4.36.50.png"/></a></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="03ae8778-c38b-4e0c-806b-5ca8d0fbf5b9"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">이번 버전에 업데이트 된 내용을 작성하시면 됩니다. 형식은 자유형식입니다.</div></figure><p id="6448bf62-0364-4f53-a185-3b7dd21a48d4" class="">
+</p></li></ol><ol id="8208a10f-ca4f-48fe-a8fb-64611c090650" class="numbered-list" start="2"><li><strong>미리보기 추가</strong><figure id="4a662bf9-2e76-41a8-835e-a0cb126a1590" class="image"><a href="Untitled/_2020-03-17__4.38.02.png"><img style="width:2770px" src="Untitled/_2020-03-17__4.38.02.png"/></a></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="c5ead1c9-2051-460a-8e85-da274312adcc"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">앱 스토어에 표시 될 미리보기 이미지를 업로드 하는 곳입니다. 기본적으로 이전 버전의 미리보기가 자동으로 들어가며, 이미지가 추가, 수정, 삭제 될 경우 이 곳에서 작업하시면 됩니다.</div></figure><p id="42545cc7-f357-4875-9cf1-7368232206b8" class="">
+</p></li></ol><ol id="547c60c7-d0de-4dcf-91c6-0ffc4f5e5ce0" class="numbered-list" start="3"><li><strong>키워드 입력</strong><figure id="1014f061-a2cf-40a7-aa3d-0fe3edfd9223" class="image"><a href="Untitled/_2020-03-17__4.40.59.png"><img style="width:1356px" src="Untitled/_2020-03-17__4.40.59.png"/></a></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="72e32c22-93dc-410b-b91d-e5d191d7b0a5"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">앱스토어에서 검색 시 사용될 키워드입니다.</div></figure><p id="cd77ea1b-9267-42d9-8954-afc23d9647f9" class="">
+</p></li></ol><ol id="fa151406-8517-4874-8f9e-4c56c6cfe01f" class="numbered-list" start="4"><li><strong>지원 URL 입력</strong><figure id="04daeb20-23d3-4de1-b234-4414f6696cd4" class="image"><a href="Untitled/_2020-03-17__4.42.51.png"><img style="width:1340px" src="Untitled/_2020-03-17__4.42.51.png"/></a></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="51349c65-4454-4b27-9f16-d74845080a7b"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">앱 설명 URL이나 회사 URL을 입력하면 됩니다.</div></figure><p id="6ffa16eb-0d1e-4153-befb-01860cc5e278" class="">
+</p></li></ol><ol id="1f57c70b-2dc5-48e0-9147-9f7e11aa48e3" class="numbered-list" start="5"><li><strong>설명 입력</strong><figure id="50ab9336-66a0-4f82-93d8-a280ea1b3dee" class="image"><a href="Untitled/_2020-03-17__4.44.12.png"><img style="width:1372px" src="Untitled/_2020-03-17__4.44.12.png"/></a></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="c5f2db4b-da98-47ea-8dd0-99c7847f1e4b"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">앱스토어에 표시 될 앱 설명을 입력하는 곳입니다.</div></figure><p id="21081ed7-c690-4618-b31c-42aedb7afee6" class="">
+</p></li></ol><ol id="b0afbebe-9a5d-4bba-9bb7-7f6c222dc912" class="numbered-list" start="6"><li><strong>빌드 선택</strong><figure id="a9c7b999-1eab-4d89-9537-809a51c7dda5" class="image"><a href="Untitled/_2020-03-17__4.45.56.png"><img style="width:2794px" src="Untitled/_2020-03-17__4.45.56.png"/></a></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="989077d9-0eb3-4e9f-ac82-0ddd66123576"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">업데이트 할 앱의 빌드를 선택합니다. + 아이콘을 클릭하면 빌드를 선택할 수 있는 화면이 나타납니다.</div></figure><figure id="66ced885-0a32-49b2-87f4-d51e5df080b7" class="image"><a href="Untitled/_2020-03-17__4.47.05.png"><img style="width:1624px" src="Untitled/_2020-03-17__4.47.05.png"/></a></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1f2e03ea-8e99-4d7a-8fff-242a67a0a554"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">빌드 선택 화면입니다. 원하는 빌드를 선택한 후 완료 버튼을 누르면 됩니다.</div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="e5413af4-541e-4e2e-a859-e55cac9f68f3"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">괄호()는 앱의 빌드버전으로 하나의 앱 버전에 여러개의 빌드버전이 존재할 수 있습니다. (테스트 시에 문제 발생 시 빌드버전을 변경하여 다시 테스트 플라이트에 업로드 합니다.)</div></figure><figure id="2b83717d-e048-44ff-ab3f-ca3d3de5981a" class="image"><a href="Untitled/_2020-03-17__4.49.46.png"><img style="width:2782px" src="Untitled/_2020-03-17__4.49.46.png"/></a></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="22c6b4c3-1d04-439d-968e-4b49300dd3c3"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">빌드를 선택하면 선택한 빌드가 표시됩니다.</div></figure><p id="532dd7a3-fde8-4b5e-9bd5-a87ceb9f4237" class="">
+</p></li></ol><ol id="f1677e3a-bcb9-4e75-8bca-b88685a7dbb8" class="numbered-list" start="7"><li><strong>앱 아이콘</strong><figure id="43fd237f-f88c-4709-9cc0-ac9473164910" class="image"><a href="Untitled.png"><img style="width:418px" src="Untitled.png"/></a></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="9224cc4a-2f7d-4417-81c1-704f080d359b"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">앱 아이콘은 따로 설정하지 않아도 빌드 선택하면 자동으로 설정 됩니다.</div></figure><p id="cba393ad-1f77-40ee-bc49-1ea3719e4e73" class="">
+</p></li></ol><ol id="338a23cd-22e9-495a-a584-c111e29f56c5" class="numbered-list" start="8"><li><strong>저작권 입력</strong><figure id="6270c1fd-897d-4c32-a713-ec4caffdd89e" class="image"><a href="Untitled/_2020-03-17__4.57.47.png"><img style="width:1376px" src="Untitled/_2020-03-17__4.57.47.png"/></a></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="f01cfedf-2c14-426e-ba36-a38da828dfec"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">앱 저작권을 입력하는 곳입니다. 이전 버전에 입력 한 값을 그대로 가져오니 변경이 필요할 때만 수정하면 됩니다.</div></figure><p id="283d365b-52e5-41e7-93cc-8d9d8dcd245c" class="">
+</p></li></ol><ol id="25f4f0d0-bffd-4375-bd9e-7c2dacee9391" class="numbered-list" start="9"><li><strong>버전</strong><figure id="57eeaefe-fc4c-4949-9fcd-82874606c361" class="image"><a href="Untitled/_2020-03-17__4.58.47.png"><img style="width:254px" src="Untitled/_2020-03-17__4.58.47.png"/></a></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="19f8ebce-b563-4b56-a74c-87475be3e7a1"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">버전을 입력하는 곳입니다. 이미 <strong>버전 및 플랫폼</strong>에서 입력한 버전으로 입력 되어 있습니다. 만약 버전이 잘못 입력 되었다면 이곳에서 수정하시면 됩니다.</div></figure><p id="5693a3b8-0459-4a7b-ae37-80f9ea3b2044" class="">
+</p></li></ol><ol id="30100fc5-a077-4b66-a9b1-1a43580b661e" class="numbered-list" start="10"><li><strong>로그인 정보</strong><figure id="065da1ae-972a-4ef2-97b0-de8373b8c0a6" class="image"><a href="Untitled/_2020-03-17__5.01.49.png"><img style="width:1372px" src="Untitled/_2020-03-17__5.01.49.png"/></a></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="c33774b1-6668-4687-9a1a-77929ada9259"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">애플 리뷰어가 앱을 사용할 수 있게 제공한 테스트 계정 정보를 입력하는 곳입니다.</div></figure><p id="630209f3-58e5-4b43-97cf-ffb16dcae8b7" class="">
+</p></li></ol><ol id="99283535-c014-474d-a3bb-5d2cf9565847" class="numbered-list" start="11"><li><strong>연락처 정보</strong><figure id="ed7aaa11-04cb-4e30-bbf2-544bb30eba9b" class="image"><a href="Untitled/_2020-03-17__5.02.42.png"><img style="width:1360px" src="Untitled/_2020-03-17__5.02.42.png"/></a></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="e1be8d22-2a18-4a9b-8098-74b7ddf71bc4"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">앱 심사 중 문제 발생 시 연락할 담당자 번호를 입력합니다.</div></figure><p id="ae8299c5-4945-41b3-af5d-013b707b283f" class="">
+</p></li></ol><ol id="b65dd523-6092-48f3-b245-f08568a3e0fe" class="numbered-list" start="12"><li><strong>메모</strong><figure id="9decb49e-334e-46ef-8767-60d91aa9b94a" class="image"><a href="Untitled/_2020-03-17__5.05.14.png"><img style="width:2788px" src="Untitled/_2020-03-17__5.05.14.png"/></a></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="4d3fdaf6-aab3-49b9-b718-5ea64c9cc0ed"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">앱 심사 시 리뷰어에게 전달해야 될 특이사항이나, 링크 등을 제공하는 목적의 메모란입니다.</div></figure><p id="f86ba33c-38fd-4b6a-8b49-f36179c55ef3" class="">
+</p></li></ol><ol id="a2989a93-c097-440e-9f6a-39ebfd5d35eb" class="numbered-list" start="13"><li><strong>첨부파일</strong><figure id="aef4f775-a416-4eef-ab1c-b93533062af5" class="image"><a href="Untitled/_2020-03-17__5.06.06.png"><img style="width:1370px" src="Untitled/_2020-03-17__5.06.06.png"/></a></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="ea2cc22b-e5a5-4b31-8ead-adf7f45c6f11"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">앱 심사 시 필요한 파일을 첨부할 수 있습니다. (ex. 저작권 계약서, 데모 영상 등)</div></figure><p id="11721ec2-c93d-4b02-adb8-7e8eb314811d" class="">
+</p></li></ol><ol id="e8d67044-7f1b-4489-981e-85ac8e885527" class="numbered-list" start="14"><li><strong>버전 출시 방법 선택</strong><figure id="d481be15-6e20-4ed4-a0fa-cc4566a75644" class="image"><a href="Untitled/_2020-03-17__5.07.10.png"><img style="width:2780px" src="Untitled/_2020-03-17__5.07.10.png"/></a></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="63bf93a0-ae95-4cd7-87a2-f160e754389b"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">심사 완료 후 해당 버전을 앱 스토어에 배포하는 방법을 선택할 수 있습니다.
+- <strong>수동으로 버전 출시</strong> : 심사가 완료되면 직접 원하는 시기에 배포할 수 있습니다.
+- <strong>자동으로 버전 출시</strong> : 심사가 완료되는 즉시 배포를 시작합니다.
+- <strong>다음 날짜 이후 앱 심사가 끝나면 자동으로 이 버전을 공개
+   </strong>- 설정한 날짜 이전 심사 완료 : 설정한 날짜에 배포 시작
+   - 설정한 날짜 이후 심사 완료 : 심사 완료 후 즉시 배포 시작</div></figure><p id="cdb088d0-dc54-48a1-97a4-7bbf721eec62" class="">
+</p></li></ol><ol id="6af29d64-6624-4d9e-a298-db3fc2711c37" class="numbered-list" start="15"><li><strong>자동 업데이트 점진적 출시</strong><figure id="32d33fe4-6f42-44df-8f12-09d6500314a3" class="image"><a href="Untitled/_2020-03-17__5.11.43.png"><img style="width:2772px" src="Untitled/_2020-03-17__5.11.43.png"/></a></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="97f4e638-5648-474c-b270-e08226397f8f"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">심사가 완료되면 모든 사용자에게 즉시 업데이트 배포를 하거나, 점진적으로 업데이트를 출시하는 방법을 선택할 수 있습니다.</div></figure><p id="2eb6b6e7-422a-45e6-b36b-b8c498d436b1" class="">
+</p></li></ol><ol id="ec2471d5-1ed5-45df-93d6-d5e5799b6aa5" class="numbered-list" start="16"><li><strong>iOS 평점 재설정</strong><figure id="ea8f196c-0e2e-4e3e-8927-9812b57ae900" class="image"><a href="Untitled/_2020-03-17__5.12.47.png"><img style="width:2302px" src="Untitled/_2020-03-17__5.12.47.png"/></a></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="9a1b7616-3242-4602-af18-3205d788e20a"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">업데이트 시 평점을 리셋 시킬지 기존 평점을 유지할지 선택합니다.</div></figure><p id="6775c4ee-baf8-4ac3-beba-667fa6af2e0a" class="">
+</p></li></ol><p id="6a63a6ce-91d2-461c-9340-3a7c9fc958b1" class="">17. <strong>기타사항</strong><div class="indented"><p id="bd0a73e2-20db-496a-b6e2-45e17edeaa3a" class="">위에서 언급되지 않은 항목들은 선택 사항이거나, 따로 건들이지 않아도 되는 내용이므로 작성하지 않았습니다.</p><p id="d1d17936-7d25-473c-8a08-446a5125c5cf" class="">
+</p></div></p><h3 id="339b90ce-bdc5-4f0b-b17c-3c609819c059" class="">심사 제출하기</h3><hr id="4d66d423-d315-445b-88c6-71063a01c9e3"/><ol id="11be288b-525b-49ae-8705-08d8e143a0c2" class="numbered-list" start="1"><li><strong>작성 내용 저장하기</strong><figure id="f0361cdc-d54a-4ac3-b29e-546921a66237" class="image"><a href="Untitled/_2020-03-17__5.15.38.png"><img style="width:468px" src="Untitled/_2020-03-17__5.15.38.png"/></a></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="fc88174c-fb27-4747-9567-e00f020d7abe"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">위의 내용들이 전부 입력 되면 화면 오른쪽 상단에 저장 버튼을 눌러 입력한 내용을 저장합니다.</div></figure><p id="dd7123da-1786-4ebd-aaad-23f82e12985e" class="">
+</p></li></ol><ol id="4f350077-d10a-4561-a9bb-9c6d32d09ac6" class="numbered-list" start="2"><li><strong>심사 제출하기</strong><figure id="649c0237-315d-4e07-96b9-007ec41c2ae6" class="image"><a href="Untitled/_2020-03-17__5.17.08.png"><img style="width:524px" src="Untitled/_2020-03-17__5.17.08.png"/></a></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="dd636026-5055-4755-a37a-3b0a1095f7c7"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">저장이 완료되면 <strong>심사를 위해 제출 </strong>버튼이 활성화 됩니다. 버튼을 눌러 심사를 시작합니다. </div></figure><p id="996d3780-0b14-4c60-a5eb-f1ac7217f43f" class="">
+</p></li></ol><ol id="14cf42cc-3078-4e19-ab03-f9c3fe0a11d8" class="numbered-list" start="3"><li><strong>광고 식별자 사용 여부 체크</strong><figure id="fd1a2a2f-188b-4b69-a551-e2681cf131a8" class="image"><a href="Untitled/_2020-03-17__5.18.39.png"><img style="width:2752px" src="Untitled/_2020-03-17__5.18.39.png"/></a></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="d095350e-b05a-4397-a795-5954c110baca"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">광고 식별자를 사용하는지 묻는 화면이 나타납니다. 앱에서 광고 모듈을 사용하여 광고를 하고 있다면 예를 선택하고 사용하지 않으면 아니요를 선택하면 됩니다.</div></figure><p id="aabccde0-6007-4340-9bf8-ba9e9d8628c5" class="">
+</p></li></ol><ol id="6af9b1c2-797c-4561-8a21-b7381749f1d1" class="numbered-list" start="4"><li><strong>최종 제출하기</strong><figure id="2c193e5b-e5c0-4111-9601-b2b1456bb249" class="image"><a href="Untitled/_2020-03-17__5.20.15.png"><img style="width:296px" src="Untitled/_2020-03-17__5.20.15.png"/></a></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="78ab0c14-052b-4c0a-acc0-7918c590857e"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">광고 식별자 사용 여부를 체크하면 오른쪽 상단의 <strong>제출 </strong>버튼이 활성화 되고 제출 버튼을 클릭하면 최종적으로 심사 제출이 완료 됩니다.</div></figure></li></ol><p id="483f0cf3-6975-4e7b-81cd-101e656c34e8" class="">
+</p><h3 id="1dbd2732-a9a3-4164-b200-0d8ac1a1317c" class="">심사 프로세스</h3><hr id="47b51269-8735-43c7-a95e-34bc54bd2cb7"/><p id="b233dad3-fda7-47b1-a9b0-6bfe727cf772" class="">심사 프로세스는 아래와 같이 진행 됩니다.</p><ol id="22f7d6af-c8df-471c-a631-4a42c0597883" class="numbered-list" start="1"><li><strong>제출 준비 중</strong> : 업데이트 대한 내용 입력 및 제출 준비 단계입니다.</li></ol><ol id="9acc3bdb-6f9f-4090-a6f1-d6b24b475f70" class="numbered-list" start="2"><li><strong>심사 대기 중</strong> : 업데이트를 제출하여 리뷰어가 심사를 하기 전 상태입니다.</li></ol><ol id="f2d7d79b-2ddc-4a3b-ba4b-e078d14693ad" class="numbered-list" start="3"><li><strong>심사 중</strong> : 리뷰어가 앱에 대한 심사를 진행하고 있는 상태입니다.</li></ol><ol id="6ca95fc8-199e-4093-8acb-a11974048b70" class="numbered-list" start="4"><li><strong>판매 준비됨</strong> : 심사가 완료 되고 배포가 진행되고 있는 상태입니다.<p id="6535d367-fecb-42af-9ff5-e8d51bcee8d9" class="">4-1. <strong>개발자 출시 대기중</strong> : 버전 출시 방법을 수동으로 선택한 경우 심사가 완료 되고, 아직 배포를 하지 않은 상태입니다. </p><p id="c3fedf62-1961-406e-a19f-4d13de10d786" class="">4-2. <strong>바이너리 거부 됨</strong> : 심사 중 문제가 발견되어 리젝 된 상태입니다. 리젝에 대한 내용은 메일이나 앱스토어 커넥트에서 확인 가능합니다.</p></li></ol></div></article></body></html>
