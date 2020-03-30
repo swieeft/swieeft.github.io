@@ -15,6 +15,10 @@ linkedin_username:
 # Add your google-analytics ID here to activate google analytics
 google_analytics:   UA-158807306-1 # out your google-analytics code
   
+sass:
+  sass_dir:         _sass
+  style:            compressed
+  
 # Build settings
 markdown:           kramdown
 asset_url:          /assets
