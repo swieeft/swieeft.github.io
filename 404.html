@@ -3,11 +3,21 @@ layout: default
 permalink: /404.html 
 ---
 
-<section class="lost-container">
-  <div class="link">
-    <img class="selfie" alt="{{ site.name }}" src="{{ site.url }}/assets/images/error.png" />
-  </div>
-  <br />
-  <br />
-  <a href="/">Home</a>
-</section>
+<!-- Page Header -->
+{% if page.background %}
+<header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+  {% else %}
+  <header class="masthead">
+    {% endif %}
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h2>Error 404</h2>
+            <span class="subheading">Page not found</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>

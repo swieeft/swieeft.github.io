@@ -1,12 +1,9 @@
 ---
-title: About
 layout: page
----
-
-![Profile.jpg](/assets/images/profile.png)
-
-# 뀔뀔(swieeft)의 개발새발기
-
+title: "ABOUT"
+subtitle: "뀔뀔(swieeft)의 개발새발기"
+background: 
+tag: [iOS, Swift]
 ---
 
 안녕하세요. 🍭달콤한 개발을 꿈꾸는 개발자 뀔뀔(swieeft)입니다.
@@ -15,7 +12,7 @@ layout: page
 
 이 블로그는 개발하면서 삽질 했던 경험을 토대로 작성되고 있습니다.
 
-삽을 들고만 계신 분들이 삽질을 덜 할 수 있기를 바라는 마음으로 정리하는 블로그 입니다.
+개발자 분들이 삽질을 덜 할 수 있기를 바라는 마음으로 정리하는 블로그 입니다.
 
 많은 분들께 도움이 되면 좋겠습니다.
 

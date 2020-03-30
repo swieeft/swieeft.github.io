@@ -1,20 +1,10 @@
 ---
-title: "[Swift] 열거형(Enum) 기본편"
 layout: post
+title: "[Swift] 열거형(Enum) 기본편"
+subtitle:
 date: 2020-02-29 00:20
-tag:
-    - iOS
-    - Swift
-headerImage: false
-image:
-description: 열거형(Enum) 기본편
-category: blog
-author: swieeft
-externalLink: true
-published: true
-comments: true
-share: true
-use_math: false
+background: 
+tag: [iOS, Swift]
 ---
 열거형이란, 연관된 항목을 묶어서 표현할 때 사용 되는 타입을 말합니다. 이미 지정된  항목 값 외에는 추가/수정이 불가능하여 다음의 경우에 많이 사용됩니다.
 
@@ -38,24 +28,13 @@ use_math: false
 
 - **기본 열거형 선언**
 
-    ```swift
-    enum 메뉴판 {
-        case 라면
-        case 김밥
-        case 찌개
-        case 떡볶이
-    }
-    ```
+    {% gist swieeft/e5ae1c27e5c97a32eadd38c8cf604825 EnumBasic-1.swift %}
 
     우리는 이제 분식집을 차려보려고 합니다. 분식집의 대표적인 메뉴 네가지를 선언한 열거형입니다. C언어에서는 위와 같이 선언되면 라면 = 0, 김밥 = 1, 찌개 = 2, 떡볶이 = 3 처럼 정수 값이 설정되지만 스위프트에서는 각각의 case 자체가 하나의 값이 되게 됩니다.
 
 - **열거형 한 줄 로 선언**
 
-    ```swift
-    enum 메뉴판 {
-        case 라면, 김밥, 찌개, 떡볶이
-    }
-    ```
+    {% gist swieeft/e5ae1c27e5c97a32eadd38c8cf604825 EnumBasic-2.swift %}
 
     열거형은 위와 같이 쉼표(,)로 구분하여 한 줄로 선언할 수도 있습니다.
 

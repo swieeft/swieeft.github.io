@@ -1,131 +1,27 @@
-# main text of home
-name: Swieeft
-bio: 달콤한 개발을 꿈꾸는 개발자
+title:              뀔뀔(swieeft)의 개발새발기
+email:              swieeft89@gmail.com
+#description:        달콤한 개발을 꿈꾸는 개발자
+description:        블로그 리뉴얼 작업 진행 중입니다...
+author:             swieeft
+baseurl:            ""
+url:                "https://swieeft.github.io"
 
-# twitter summary info
-description: 개발을 하면서 겪었던 개발새발기를 정리하는 공간입니다.
+# Social Profiles
+twitter_username:
+github_username:    swieeft
+facebook_username:
+linkedin_username:
 
-# if it's an external image, update below for true
-# better with square images
-external-image: false
-# gravatar: 2a619ea3524e446a30249f40fae2cfad
-picture: assets/images/profile.png
-
-# If you want to include your resume, set to true
-# and specify source (external or local).
-resume: true
-resume-external: true
-resume-url: https://www.notion.so/swieeft/Resume-269802c635b44285b6165b9a442be1f5
-
-url: https://swieeft.github.io
-# your url: https://swieeft.github.io
-
-permalink: /:title/
-
-markdown: kramdown
-highlighter: rouge
-
-# add code for using mathjax style
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
-
-# Analytics
-analytics:
-  provider               : "google-gtag" # 구글 어날리틱스 등록 false (default), "google", "google-universal", "custom"
-  google:
-    tracking_id          : "UA-158807306-1"
-    anonymize_ip         : # true, false (default)
-
-# To enable google analytics, supply your token below
-#analytics-google: "UA-158807306-1"
-
-# To enable piwik tracking, supply your url & site ID below
-# analytics-piwik-url: 'piwik.my-host.com'
-# analytics-piwik-id: 1
-
-# if you don't want comments in your posts, leave categories empty
-disqus:
-  shortname: https-swieeft-github-io # enter this from your disqus account
-  categories: [blog, project] # only show disqus for posts that have these categories
-
-# if you don't have any of social below, comment the line
-# facebook: myfacebook
-# twitter: mytwitter
-# google: mygoogle
-# instagram: myinstagram
-# pinterest: mypinterest
-# linkedin: sjhan17
-# youtube: myyoutube
-# spotify: myspotify
-github: swieeft
-# gitlab: mygitlab
-# lastfm: mylastfm
-# stackoverflow: 7044681/mystackoverflow
-# quora: userquora
-# reddit: username
-# medium: medium
-# vimeo: myvimeo
-# lanyrd: mylanyrd
-email: swieeft89@gmail.com
-
-authors:
-  Swieeft:
-    name: Park GilNam
-    bio: iOS Developer
-    external-image: false
-    picture: assets/images/profile.png
-    github: https://swieeft.github.io
-
-# do you want a larger site? change the option below
-# options: [normal, large] | default: normal
-# normal = 560px / large = 810px
-width: normal
-
-# if you don't need pagination, comment the *paginate* configs below
-# paginate: 5
-# paginate_path: "blog/:num/"
-
-# if you don't need projects, comment the *projects* configs below
-projects: false
-
-# if you don't need "about" or "blog", comment them out below
-about: true
-blog: true
-
-# do you want to show the "read time" of the posts?
-read-time: true
-
-# do you want to show the "tags" inside the posts?
-show-tags: true
-
-# related posts inside a post?
-related: true
-
-# Display links for next and previous posts for the specified categories
-post-advance-links: [blog]
-
-# show author block at the end of a post ?
-show-author: true
-
-# do you want some animations?
-animation: true
-
+# Add your google-analytics ID here to activate google analytics
+google_analytics:   UA-158807306-1 # out your google-analytics code
+  
+# Build settings
+markdown:           kramdown
+asset_url:          /assets
+paginate:           10
+paginate_path:      "/posts/page:num/"
 plugins:
-  - jekyll-seo-tag
   - jekyll-gist
   - jekyll-feed
-  - jemoji
-  - jekyll-admin
-
-#jekyll-mentions:
-#  base_url: /
-
-compress_html:
-  ignore:
-    envs:
-      - development
-      - stage
-
-exclude:
-  ["travis.sh", "Rakefile", "README.md", "Gemfile", "Gemfile.lock", "FAQ.md"]
+  - jekyll-paginate
+  - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
