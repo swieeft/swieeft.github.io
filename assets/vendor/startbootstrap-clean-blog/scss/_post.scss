@@ -11,15 +11,15 @@
       &:hover {
         color: $primary;
       }
-      font-size: 25px;
+      font-size: 22px;
       margin-top: 30px;
       margin-bottom: 10px;
       color: $gray-700;
     }
     > .post-subtitle {
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 500;
-      font-style: italic;
+      // font-style: italic;
       margin: 0 0 10px;
       color: $gray-600;
     }
@@ -31,10 +31,10 @@
     }
   }
   > .post-meta {
-    text-align: right;
+    text-align: left;
     font-size: 15px;
     margin-top: 0;
-    color: $gray-600;
+    color: $gray-500;
     > a {
       text-decoration: none;
       color: $gray-900;
@@ -48,7 +48,7 @@
   @media only screen and (min-width: 768px) {
     > a {
       > .post-title {
-        font-size: 25px;
+        font-size: 22px;
       }
     }
   }
