@@ -1,8 +1,8 @@
 // Global styling for this template
 body {
-  font-size: 20px;
-  color: $gray-900;
-  @include serif-font;
+  font-size: 17px;
+  color: $gray-700;
+  // @include serif-font;
 }
 
 p {
@@ -10,6 +10,8 @@ p {
   margin: 30px 0;
   a {
     text-decoration: underline;
+    color: $teal;
+    font-weight: 600;
   }
 }
 
@@ -19,8 +21,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 800;
-  @include sans-serif-font;
+  font-weight: 600;
+  // @include sans-serif-font;
 }
 
 a {
@@ -74,4 +76,10 @@ img::selection {
 img::-moz-selection {
   color: $white;
   background: transparent;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
