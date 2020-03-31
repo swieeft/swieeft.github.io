@@ -25,9 +25,43 @@ header.masthead {
       padding: 200px 0;
     }
   }
-  
+
   .page-heading,
-  .site-heading,
+  .site-heading {
+    text-align: center;
+    h2 {
+      font-size: 35px;
+      font-weight: 800;
+    }
+    .meta,
+    .subheading {
+      line-height: 1.1;
+      display: block;
+      color: rgba($color: #ffffff, $alpha: 0.5);
+    }
+    .subheading {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 10px 0 30px;
+      // @include sans-serif-font;
+    }
+    .meta {
+      font-size: 15px;
+      color: $gray-600;
+      a {
+        color: $white;
+      }
+    }
+    @media only screen and (min-width: 768px) {
+      h1 {
+        font-size: 55px;
+      }
+      .subheading {
+        font-size: 20px;
+      }
+    }
+  }
+
   .post-heading {
     text-align: center;
     h1 {
@@ -43,13 +77,11 @@ header.masthead {
       font-size: 25px;
       font-weight: 600;
       margin: 10px 0 30px;
-      @include sans-serif-font;
+      // @include sans-serif-font;
     }
     .meta {
-      font-size: 20px;
-      font-weight: 300;
-      font-style: italic;
-      @include serif-font;
+      font-size: 15px;
+      color: $gray-600;
       a {
         color: $white;
       }

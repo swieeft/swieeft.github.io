@@ -18,7 +18,7 @@ comments: true
             {% if page.subtitle %}
             <span class="subheading">{{ page.subtitle }}</span>
             {% endif %}
-            <span class="meta">{{ page.date | date: '%Y. %m. %d. %R' }}</span>
+            <span class="meta">{{ site.author }} | {{ page.date | date: '%Y. %m. %d. %R' }}</span>
           </div>
         </div>
       </div>
@@ -36,12 +36,10 @@ comments: true
         <div class="clearfix">
 
           {% if page.previous.url %}
-          <a class="btn btn-primary float-left" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.previous.title }}">&larr; Previous<span class="d-none d-md-inline">
-              Post</span></a>
+          <a class="btn btn-primary float-left" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.previous.title }}">&larr; Prev</a>
           {% endif %}
           {% if page.next.url %}
-          <a class="btn btn-primary float-right" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.next.title }}">Next<span class="d-none d-md-inline">
-              Post</span> &rarr;</a>
+          <a class="btn btn-primary float-right" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.next.title }}">Next &rarr;</a>
           {% endif %}
 
         </div>
