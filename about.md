@@ -2,7 +2,7 @@
 layout: page
 title: "ABOUT"
 subtitle: "뀔뀔(swieeft)의 개발새발기"
-background: 
+background: /assets/headerBackground.png
 tag: [iOS, Swift]
 ---
 
