@@ -101,8 +101,7 @@ UIBezierPath 전부를 설명하는 글은 많아서 이 글에서는 UIBezierPa
 
     Angle을 구할 때 사용하는 CGVector와 atan2는 아래 공식 문서를 확인 해보세요.
 
-    > [CGVector](https://developer.apple.com/documentation/coregraphics/cgvector)<br>
-    > [atan2(_:_:)](https://developer.apple.com/documentation/coregraphics/1455332-atan2)
+    [CGVector](https://developer.apple.com/documentation/coregraphics/cgvector), [atan2(_:_:)](https://developer.apple.com/documentation/coregraphics/1455332-atan2)
 
     - Angle 구하는 방법
 

@@ -34,6 +34,14 @@ a {
   }
 }
 
+li {
+  a {
+    text-decoration: underline;
+    color: $teal;
+    font-weight: 600;
+  }
+}
+
 blockquote {
   font-style: italic;
   color: $gray-600;
