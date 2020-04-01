@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "[iOS] 커스텀 스위치(Custom Switch) 만들기"
-subtitle:
+title: "커스텀 스위치(Custom Switch) 만들기"
+subtitle: "[iOS]"
 date: 2020-02-23 21:20
 background: 
 tag: [iOS, Swift]

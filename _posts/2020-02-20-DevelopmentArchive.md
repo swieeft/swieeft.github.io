@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "[iOS] Development로 Archive하여<br>테스트 버전 배포하기"
-subtitle:
+title: "Development로 Archive하여<br>테스트 버전 배포하기"
+subtitle: "[iOS]"
 date: 2020-02-20 18:20
 background: 
 tag: [iOS, Xcode]

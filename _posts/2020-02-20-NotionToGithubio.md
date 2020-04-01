@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "[ToMuch] 개발새발기를 Notion에서 Github io로 옮기면서..."
-subtitle:
+title: "개발새발기를 Notion에서 Github io로 옮기면서"
+subtitle: "[ToMuch]"
 date: 2020-02-20 18:10
 background: 
 tag: [ToMuch, Notion, Github io]

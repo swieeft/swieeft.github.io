@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "[Tips] Xcode에서 Archive 없이 Organizer 바로 열기"
-subtitle:
+title: "Xcode에서 Archive 없이 Organizer 바로 열기"
+subtitle: "[Tips]"
 date: 2020-02-23 13:45
 background: 
 tag: [Tips, Xcode]

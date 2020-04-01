@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "[RxSwift] RxSwift에서 Delegate 패턴 사용하기 (2/2)"
-subtitle:
+title: "RxSwift에서 Delegate 패턴 사용하기 (2/2)"
+subtitle: "[RxSwift]"
 date: 2020-02-20 17:40
 background: 
 tag: [iOS, RxSwift]

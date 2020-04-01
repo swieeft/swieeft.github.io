@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "[iOS] 스토리보드 레퍼런스(Storyboard Reference) 사용방법"
-subtitle:
+title: "스토리보드 레퍼런스(Storyboard Reference)<br>사용방법"
+subtitle: "[iOS]"
 date: 2020-02-24 13:50
 background: 
 tag: [iOS, Xcode]

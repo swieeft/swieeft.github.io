@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "[Swift] 열거형(Enum) 기본편"
-subtitle:
+title: "열거형(Enum) 기본편"
+subtitle: "[Swift]"
 date: 2020-02-29 00:20
 background: 
 tag: [iOS, Swift]

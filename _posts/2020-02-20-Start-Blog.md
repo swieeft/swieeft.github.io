@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "[ToMuch] 개발새발기를 시작하며..."
-subtitle:
+title: "개발새발기를 시작하며"
+subtitle: "[ToMuch]"
 date: 2020-02-20 16:00
 background: 
 tag: [ToMuch, Note]

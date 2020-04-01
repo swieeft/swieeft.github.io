@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "[iOS] UIBezierPath의 Arc 쉽게 그리는 방법"
-subtitle:
+title: "UIBezierPath의 Arc 쉽게 그리는 방법"
+subtitle: "[iOS]"
 date: 2020-03-06 21:30
 background: 
 tag: [iOS, Swift]

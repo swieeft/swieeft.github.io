@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "[ToMuch] 2019년의 회고와 2020년의 목표"
-subtitle:
+title: "2019년의 회고와 2020년의 목표"
+subtitle: "[ToMuch]"
 date: 2020-02-20 17:00
 background: 
 tag: [ToMuch, Note]
