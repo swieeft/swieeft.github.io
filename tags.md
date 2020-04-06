@@ -3,6 +3,7 @@ layout: page
 title: "TAGS"
 subtitle:
 background: /assets/headerBackground.png
+permalink: /tags/
 ---
 
 <div id="archives">
