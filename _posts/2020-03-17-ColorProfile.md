@@ -4,7 +4,7 @@ title: "디자인 가이드와 내 앱의 컬러가 달라요😟"
 subtitle: "[Tips]"
 date: 2020-03-17 15:35
 background: 
-tag: [Tips, iOS, Xcode]
+tags: [tips, ios, xcode]
 ---
 
 안녕하세요. 오랜만에 글을 업데이트 하는 것 같습니다.

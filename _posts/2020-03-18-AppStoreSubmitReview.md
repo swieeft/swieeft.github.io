@@ -4,7 +4,7 @@ title: "앱 스토어 심사 제출 및 배포하기"
 subtitle: "[Tips]"
 date: 2020-03-18 09:50
 background: 
-tag: [Tips, iOS]
+tags: [tips, ios]
 ---
 
 iOS 앱 배포를 위해서 심사 제출 및 배포하는 방법에 대해 알아보도록 하겠습니다.

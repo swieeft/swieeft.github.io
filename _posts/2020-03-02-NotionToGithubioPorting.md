@@ -4,7 +4,7 @@ title: "Notion으로 글 작성하고 Github io로 글 옮기기"
 subtitle: "[Tips]"
 date: 2020-03-02 17:00
 background: 
-tag: [Tips, Github io, Notion]
+tags: [tips, githubio, notion]
 ---
 
 기존에 블로그를 Notion으로 운영하기 위해 작업을 하다가 여러가지 문제점을 발견하여 Github io로 블로그를 이동하게 되었습니다. 

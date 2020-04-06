@@ -37,12 +37,24 @@ layout: default
         <article class="post-preview">
           <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
             <h2 class="post-title">{{ post.title | replace: '<br>', ' ' }}</h2>
-            {% if post.subtitle %}
+            <!-- {% if post.subtitle %}
             <h3 class="post-subtitle">{{ post.subtitle }}</h3>
-            {% else %}
+            {% else %} -->
             <!-- <h3 class="post-contents">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3> -->
-            {% endif %}
+            <!-- {% endif %} -->
           </a>
+          <div class="post-tags">
+            {% if post %}
+              {% assign tags = post.tags %}
+            {% else %}
+              {% assign tags = page.tags %}
+            {% endif %}
+            {% for tag in tags %}
+              {% capture tag_name %}{{ site.data.format[tag] }}{% endcapture %}
+                <a class="btn btn-tags" href="/tags/#{{ tag_name | slugize }}">#{{ tag_name }}</a>
+                <!-- {% unless forloop.last %},{% endunless %} -->
+            {% endfor %}
+          </div>
           <p class="post-meta">{{ post.date | date: '%Y. %m. %d. %R' }}</p>
         </article>
 

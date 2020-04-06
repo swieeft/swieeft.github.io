@@ -4,9 +4,7 @@
   font-weight: 600;
   padding: 15px 15px;
   letter-spacing: 1px;
-  // text-transform: uppercase;
   border-radius: 50;
-  // @include sans-serif-font;
 }
 
 .btn-primary {
@@ -24,4 +22,39 @@
 .btn-lg {
   font-size: 16px;
   padding: 25px 35px;
+}
+
+.btn-tags {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 3px 3px;
+  letter-spacing: 1px;
+  border-radius: 10;
+  // border-width: thin;
+  background-color: $white;
+  // border-color: $primary;
+  color: $gray-600;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+    background-color: lighten($color: $primary, $amount: 7.5) !important;
+    // border-color: lighten($color: $primary, $amount: 7.5) !important;
+  }
+}
+
+.btn-tags-in-post {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 3px 3px;
+  letter-spacing: 1px;
+  border-radius: 10;
+  background-color: $primary;
+  color: $white;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+    background-color: lighten($color: $primary, $amount: 7.5) !important;
+  }
 }

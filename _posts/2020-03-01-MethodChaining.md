@@ -4,7 +4,7 @@ title: "함수 체이닝(Method Chaining) 만들기"
 subtitle: "[Swift]"
 date: 2020-03-01 11:15
 background: 
-tag: [iOS, Swift]
+tags: [ios, swift]
 ---
 
 이번엔 함수 체이닝(Method Chaining)에 대한 글을 작성 해보려고 합니다. 우리는 흔히 코딩을 하면서 같은 대상에 대한 여러가지 작업을 처리해야 되는 경우가 생깁니다.

@@ -4,7 +4,7 @@ title: "간단한 플로팅 버튼(Floating Button) 만들기"
 subtitle: "[iOS]"
 date: 2020-03-21 23:20
 background: 
-tag: [iOS, Swift]
+tags: [ios, swift]
 ---
 
 안녕하세요. 오늘은 간단한 플로팅 버튼을 만들어 보려고 합니다. 

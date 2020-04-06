@@ -4,7 +4,7 @@ title: "UIView 특정 모서리만 둥글게 만들기(Round Corners)"
 subtitle: "[iOS]"
 date: 2020-03-05 17:45
 background: 
-tag: [iOS, Swift]
+tags: [ios, swift]
 ---
 
 오늘은 UIView에서 특정 모서리만 둥글게 처리하는 방법을 알아보려고 합니다.

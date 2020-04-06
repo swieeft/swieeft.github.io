@@ -4,7 +4,7 @@ title: "아임포트 다날 SMS 본인인증 iOS에 연동하기"
 subtitle: "[iOS]"
 date: 2020-02-23 20:55
 background: 
-tag: [iOS]
+tags: [ios]
 ---
 
 회사 프로젝트에 본인인증 기능을 추가하기 위해 아임포트에서 제공하는 다날 SMS 본인인증 기능을 사용하였습니다.

@@ -4,7 +4,7 @@ title: "열거형(Enum) 기본편"
 subtitle: "[Swift]"
 date: 2020-02-29 00:20
 background: 
-tag: [iOS, Swift]
+tags: [ios, swift]
 ---
 
 열거형이란, 연관된 항목을 묶어서 표현할 때 사용 되는 타입을 말합니다. 이미 지정된  항목 값 외에는 추가/수정이 불가능하여 다음의 경우에 많이 사용됩니다.

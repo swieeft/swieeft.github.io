@@ -4,7 +4,7 @@ title: "Xcode에서 Archive 없이 Organizer 바로 열기"
 subtitle: "[Tips]"
 date: 2020-02-23 13:45
 background: 
-tag: [Tips, Xcode]
+tags: [tips, xcode]
 ---
 
 안녕하세요. 이번에는 정말 짧은 글이 될 것 같습니다. 우리는 종종 배포를 위해 Archive를 하고, Archive가 완료 되면 Xcode에서는 Organizer 창을 오픈 시켜 줍니다. 하지만 Archive가 오래 걸리다 보니 종종 딴 짓을 하다가 완료가 되어 오픈 된 Organizer 창을 그냥 종료 시켜 버리는 경우가 발생합니다.

@@ -4,7 +4,7 @@ title: "QR, Barcode 리더기 만들기"
 subtitle: "[iOS]"
 date: 2020-02-25 18:40
 background: 
-tag: [iOS, Swift]
+tags: [ios, swift]
 ---
 
 흔히 사용되지는 않지만 종종 QRcode나 Barcode를 인식해서 나온 데이터로 상품을 등록하거나, 가계부를 작성하는 등 기능을 구현해야 되는 일이 있습니다.

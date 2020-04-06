@@ -19,9 +19,22 @@ comments: true
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="post-heading">
             <h2>{{ page.title }}</h2>
-            {% if page.subtitle %}
+            <!-- {% if page.subtitle %}
             <span class="subheading">{{ page.subtitle }}</span>
-            {% endif %}
+            {% endif %} -->
+            <div class="post-tags">
+              {% if post %}
+                {% assign tags = post.tags %}
+              {% else %}
+                {% assign tags = page.tags %}
+              {% endif %}
+              {% for tag in tags %}
+                {% capture tag_name %}{{ site.data.format[tag] }}{% endcapture %}
+                  <a class="btn btn-tags-in-post" href="/tags/#{{ tag_name | slugize }}">#{{ tag_name }}</a>
+                  <!-- {% unless forloop.last %},{% endunless %} -->
+              {% endfor %}
+            </div>
+            <br/>
             <span class="meta">{{ site.author }} | {{ page.date | date: '%Y. %m. %d. %R' }}</span>
           </div>
         </div>

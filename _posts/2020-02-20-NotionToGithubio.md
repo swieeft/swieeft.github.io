@@ -4,7 +4,7 @@ title: "개발새발기를 Notion에서 Github io로 옮기면서"
 subtitle: "[ToMuch]"
 date: 2020-02-20 18:10
 background: 
-tag: [ToMuch, Notion, Github io]
+tags: [toMuch, notion, githubio]
 ---
 
 블로그를 시작하면서 어떤 플랫폼에서 블로그를 시작할지 고민을 하고 있었는데, Notion이 떠올랐습니다. 그래서 망설임 없이 노션을 결제하고 블로그를 시작하였습니다. 

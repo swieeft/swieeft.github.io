@@ -4,7 +4,7 @@ title: "RxSwift에서 Delegate 패턴 사용하기 (1/2)"
 subtitle: "[RxSwift]"
 date: 2020-02-20 17:30
 background: 
-tag: [iOS, RxSwift]
+tags: [ios,rxswift]
 ---
 
 현재 다니고 있는 회사 프로젝트에서 RxSwift를 사용하고 있습니다. 근데 Delegate를 사용해도 될 것 같은 부분에  전임자분은 Delegate 대신에 Notification으로 코드를 작성해놓았더군요... 무엇 때문에? 왜?라는 물음을 가지고 작업을 시작하였습니다.

@@ -4,7 +4,7 @@ title: "Development로 Archive하여<br>테스트 버전 배포하기"
 subtitle: "[iOS]"
 date: 2020-02-20 18:20
 background: 
-tag: [iOS, Xcode]
+tags: [ios, xcode]
 ---
 
 애플에서 권장하는 테스트 버전 배포는 TestFlight입니다. 하지만 테스트를 진행하다 보면 자주 수정하여 재배포를 해야 되는 경우가 있는데 TestFlight에 업로드하여 배포할 경우 평균 30분 정도의 TestFlight 반영 시간이 필요합니다.

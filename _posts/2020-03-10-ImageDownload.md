@@ -4,7 +4,7 @@ title: "URL을 이용한 Image Download"
 subtitle: "[iOS]"
 date: 2020-03-10 13:45
 background: 
-tag: [iOS, Swift]
+tags: [ios, swift]
 ---
 
 안녕하세요. 이번에는 URL을 이용한 Image Download를 알아보려고 합니다.

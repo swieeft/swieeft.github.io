@@ -4,7 +4,7 @@ title: "스토리보드 레퍼런스(Storyboard Reference)<br>사용방법"
 subtitle: "[iOS]"
 date: 2020-02-24 13:50
 background: 
-tag: [iOS, Xcode]
+tags: [ios, xcode]
 ---
 
 iOS 개발을 할 때 UI 개발을 하기 위해 많은 분들이 Storyboard를 이용합니다. Storyboard를 사용했을 때 장점은 제가 생각 했을 때 아래 3가지 입니다.

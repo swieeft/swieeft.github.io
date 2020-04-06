@@ -4,7 +4,7 @@ title: "커스텀 스위치(Custom Switch) 만들기"
 subtitle: "[iOS]"
 date: 2020-02-23 21:20
 background: 
-tag: [iOS, Swift]
+tags: [ios, swift]
 ---
 
 안녕하세요. 오늘은 커스텀 스위치(Custom Switch)를 만들어 보려고 합니다. 애플에서는 이미 기본적으로 [UISwitch](https://developer.apple.com/documentation/uikit/uiswitch)라는 기본 컨트롤을 제공하지만 디자인 요구사항에 따라 커스텀을 해야 될 때 기본 UISwitch는 디자인 적인 요소에 많은 한계가 존재합니다. 

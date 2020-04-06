@@ -4,7 +4,7 @@ title: "RxSwift에서 Delegate 패턴 사용하기 (2/2)"
 subtitle: "[RxSwift]"
 date: 2020-02-20 17:40
 background: 
-tag: [iOS, RxSwift]
+tags: [ios, rxswift]
 ---
 
 RxSwift에서 Delegate 패턴 사용하기 두번째 방법은 Subject와 Obervable을 활용하여 사용하는 방식입니다. 첫번째 방법에서는 Delegate를 만들기 위해 여러 복잡한 작업과 Objective-C에서 사용 가능한 데이터형만을 사용할 수 있었다면 두번째 방법은 좀 더 간단하면서 더 많은 데이터형을 사용할 수 있다는 장점이 있습니다.  

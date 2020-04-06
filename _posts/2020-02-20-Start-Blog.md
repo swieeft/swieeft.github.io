@@ -4,7 +4,7 @@ title: "개발새발기를 시작하며"
 subtitle: "[ToMuch]"
 date: 2020-02-20 16:00
 background: 
-tag: [ToMuch, Note]
+tags: [tomuch, note]
 ---
 
 2~3년 전부터 매번 다짐하고 시도했던 것 중 하나는 개발 관련 지식과 기타 이야기 등을 꾸준히 쓸 수 있는 블로그를 운영하는 것이었습니다.
