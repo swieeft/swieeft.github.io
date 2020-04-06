@@ -23,4 +23,4 @@ by. 뀔뀔(swieeft)
 
 ps. 저의 경력사항이 궁금하신 분들은 아래 링크를 참고해주세요.
 
-[Resume](https://www.notion.so/Park-GilNam-269802c635b44285b6165b9a442be1f5)
+[Resume](/resume/)
