@@ -2,7 +2,7 @@
 layout: post
 title: "열거형(Enum) 고급편"
 subtitle: "[Swift]"
-date: 2020-03-02 17:00
+date: 2020-03-04 17:00
 background: 
 tags: [ios, swift]
 ---
