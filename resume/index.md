@@ -51,6 +51,11 @@ background: /assets/headerBackground.png
 
 ---
 
+- **[인바이츠헬스케어](https://invites.co.kr/)**
+    - 2020\. 03\. 16 ~ 현재
+    - 프리랜서
+    - iOS App 개발
+
 - **[생산적문화활동](https://www.murmuring.fun/)**
     - 2020\. 01\. 02 ~ 2020\. 03\. 10
     - 정직원
@@ -102,22 +107,6 @@ background: /assets/headerBackground.png
 
 ---
 
-**개인 프로젝트**
-
-➰ [SwieeftUIBezierPath](/resume/swieeftuibezierpath.html)
-
-🏞 [SwieeftImageViewer](/resume/swieeftimageviewer.html)
-
-⚙ [CustomView](/resume/customview.html)
-
-🖌 [DrawingRecorder](/resume/drawingrecorder.html)
-
-⚫ [DotPattern-UIBezierPath](/resume/dotpattern_uibezierpath.html)
-
-<img class="icon" src="/assets/images/resume/samsi_icon.png"/>[삼시묵상](/resume/samsi.html)
-
----
-
 **회사 프로젝트**
 
 <img class="icon" src="/assets/images/resume/murmuring_icon.png"/>[머머링 - 일상을 담는 목소리](/resume/murmuring.html)
@@ -135,3 +124,20 @@ background: /assets/headerBackground.png
 **외주 프로젝트**
 
 <img class="icon" src="/assets/images/resume/people_icon.png"/>[피플 - People](/resume/people.html)
+
+---
+
+**개인 프로젝트**
+
+➰ [SwieeftUIBezierPath](/resume/swieeftuibezierpath.html)
+
+🏞 [SwieeftImageViewer](/resume/swieeftimageviewer.html)
+
+⚙ [CustomView](/resume/customview.html)
+
+🖌 [DrawingRecorder](/resume/drawingrecorder.html)
+
+⚫ [DotPattern-UIBezierPath](/resume/dotpattern_uibezierpath.html)
+
+<img class="icon" src="/assets/images/resume/samsi_icon.png"/>[삼시묵상](/resume/samsi.html)
+
