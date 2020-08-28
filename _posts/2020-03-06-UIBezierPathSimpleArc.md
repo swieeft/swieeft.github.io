@@ -5,6 +5,7 @@ subtitle: "[iOS]"
 date: 2020-03-06 21:30
 background: 
 tags: [ios, swift]
+use_math: true
 ---
 안녕하세요. 오늘은 UIBezierPath의 Arc를 쉽게 그리는 방법에 대해 알아보려고 합니다.
 
