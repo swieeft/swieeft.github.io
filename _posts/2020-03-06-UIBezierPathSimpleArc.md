@@ -78,11 +78,17 @@ UIBezierPath 전부를 설명하는 글은 많아서 이 글에서는 UIBezierPa
 
     - 반지름을 구하는 공식
 
-        $$x = start(x) - center(x)$$
+        $$
+        x = start(x) - center(x)
+        $$
 
-        $$y = start(y) - center(y)$$
+        $$        
+        y = start(y) - center(y)
+        $$
 
-        $$r = \sqrt{x^2 + y^2}$$
+        $$
+        r = \sqrt{x^2 + y^2}
+        $$
 
     - 반지름 생성 메서드
 
