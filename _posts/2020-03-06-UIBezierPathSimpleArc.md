@@ -78,7 +78,19 @@ UIBezierPath 전부를 설명하는 글은 많아서 이 글에서는 UIBezierPa
 
     - 반지름을 구하는 공식
 
-       ![UIBezierPathSimpleArc4.png](/assets/images/posts/2020-03-06/UIBezierPathSimpleArc4.png)
+        $$
+        x = start(x) - center(x)
+        $$
+
+        $$        
+        y = start(y) - center(y)
+        $$
+        
+        $$
+        r = \sqrt{x^2 + y^2}
+        $$
+
+        ![UIBezierPathSimpleArc4.png](/assets/images/posts/2020-03-06/UIBezierPathSimpleArc4.png)
 
     - 반지름 생성 메서드
 
