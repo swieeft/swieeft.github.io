@@ -5,7 +5,6 @@ subtitle: "[iOS]"
 date: 2020-03-06 21:30
 background: 
 tags: [ios, swift]
-use_math: true
 ---
 안녕하세요. 오늘은 UIBezierPath의 Arc를 쉽게 그리는 방법에 대해 알아보려고 합니다.
 
@@ -77,18 +76,6 @@ UIBezierPath 전부를 설명하는 글은 많아서 이 글에서는 UIBezierPa
     이제 세 개의 Point를 만들었으니, Arc의 반지름을 구할 차례입니다. 반지름은 Center Point와 Start Point의 거리를 계산하여 구해줍니다. 
 
     - 반지름을 구하는 공식
-
-        $$
-        x = start(x) - center(x)
-        $$
-
-        $$        
-        y = start(y) - center(y)
-        $$
-        
-        $$
-        r = \sqrt{x^2 + y^2}
-        $$
 
         ![UIBezierPathSimpleArc4.png](/assets/images/posts/2020-03-06/UIBezierPathSimpleArc4.png)
 
