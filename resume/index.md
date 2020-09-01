@@ -109,6 +109,8 @@ background: /assets/headerBackground.png
 
 **회사 프로젝트**
 
+<img class="icon" src="/assets/images/resume/care8dna_icon.png"/>[Care8 DNA](/resume/care8dna.html)
+
 <img class="icon" src="/assets/images/resume/murmuring_icon.png"/>[머머링 - 일상을 담는 목소리](/resume/murmuring.html)
 
 <img class="icon" src="/assets/images/resume/fantasyleaguer_icon.png"/>[판타지리거 - Fantasy Leaguer](/resume/fantasyleaguer.html)
