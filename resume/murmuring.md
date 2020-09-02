@@ -17,7 +17,7 @@ background: /assets/headerBackground.png
 
 🗓 **Period** : 2020\. 01\. 02 ~ 2020\. 03\. 10
 
-👨🏻‍💻 **Role** : 머머링 iOS App 개발 : 라이브 방송 기능 및 유지보수
+👨🏻‍💻 **Role** : 머머링 iOS App 개발 : 기능 개발 및 유지보수
 
 🍎 **AppStore** : [‎머머링 - 일상을 담는 목소리](https://apps.apple.com/kr/app/%EB%A8%B8%EB%A8%B8%EB%A7%81-%EC%9D%BC%EC%83%81%EC%9D%84-%EB%8B%B4%EB%8A%94-%EB%AA%A9%EC%86%8C%EB%A6%AC/id1384878309)
 
