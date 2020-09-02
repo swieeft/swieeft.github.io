@@ -36,7 +36,6 @@ iOS 앱에서 기존 작업된 프로젝트 유지보수 및 개발을 담당하
 - Swift 4.2
 - RxSwift
 - ReactorKit
-- RemoteMonster(음성 라이브 방송 SDK)
 
 ---
 
