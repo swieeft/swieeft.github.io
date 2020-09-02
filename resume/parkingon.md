@@ -15,7 +15,7 @@ background: /assets/headerBackground.png
 
 🏢 **Company** : [지니웍스 (Genieworks)](http://www.genieworks.net/)
 
-🗓 **Period** : 2018\. 09\. 03 ~ 2018\. 12\. 13
+🗓 **Period** : 2018\. 09\. 03 ~ 2018\. 12\. 31
 
 👨🏻‍💻 **Role** : 파킹온 iOS App 유지보수 및 신규 기능 개발
 

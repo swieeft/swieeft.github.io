@@ -15,7 +15,7 @@ background: /assets/headerBackground.png
 
 🏢 **Company** : [지니웍스 (Genieworks)](http://www.genieworks.net/)
 
-🗓 **Period** : 2018\. 06\. 04 ~ 2018\. 12\. 13
+🗓 **Period** : 2018\. 06\. 04 ~ 2018\. 12\. 31
 
 👨🏻‍💻 **Role** : 픽앤유니크 iOS App 개발
 
