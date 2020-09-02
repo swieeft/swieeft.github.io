@@ -27,6 +27,8 @@ background: /assets/headerBackground.png
 
 자동차 관련(출장세차, 대리운전, 탁송 등) O2O 서비스 앱입니다.
 
+iOS 앱에 검사대행 기능을 추가 개발하였으며, 유지보수를 담당하였습니다.
+
 ---
 
 #### 📚 Stack

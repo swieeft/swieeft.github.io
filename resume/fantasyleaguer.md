@@ -29,6 +29,8 @@ background: /assets/headerBackground.png
 
 앱스토어 게임-스포츠 장르에서 인기순위 23위까지 기록한 앱입니다.
 
+iOS 앱 개발 전체를 담당하였습니다.
+
 > 서비스 종료
 
 ---
