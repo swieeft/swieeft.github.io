@@ -131,6 +131,8 @@ background: /assets/headerBackground.png
 
 **개인 프로젝트**
 
+<img class="icon" src="/assets/images/resume/samsi_icon.png"/>[삼시묵상](/resume/samsi.html)
+
 ➰ [SwieeftUIBezierPath](/resume/swieeftuibezierpath.html)
 
 🏞 [SwieeftImageViewer](/resume/swieeftimageviewer.html)
@@ -140,6 +142,3 @@ background: /assets/headerBackground.png
 🖌 [DrawingRecorder](/resume/drawingrecorder.html)
 
 ⚫ [DotPattern-UIBezierPath](/resume/dotpattern_uibezierpath.html)
-
-<img class="icon" src="/assets/images/resume/samsi_icon.png"/>[삼시묵상](/resume/samsi.html)
-

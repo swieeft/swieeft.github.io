@@ -13,27 +13,41 @@ background: /assets/headerBackground.png
 
 <br>
 
-🗓 **Period** : 2017\. 12\. 01 ~ 2018\. 02\. 27
+🗓 **Period** : 
 
-🐙 **Github** : [swieeft/Three_meditation_a_day](https://github.com/swieeft/Three_meditation_a_day)
+- 2017\. 12\. 01 ~ 2018\. 02\. 27 (1차 버전)
+- 2020\. 09\. 01 ~ 2020\. 09\. 24 (2차 버전) 
+
+👨🏻‍💻 **Role** : 기획, 디자인, 앱 개발, DB 설계 전체를 담당하였습니다.
+
+🍎 **AppStore** : 심사 진행중
 
 ---
 
 #### 📜 Content
 
-하루 3번의 푸시 메시지를 통해 성경을 묵상할 수 있게 해주는 iOS App입니다. iOS를 공부하면서 처음 런칭까지 진행한 첫번째 App입니다.
+하루 세번 로컬 푸시 알림을 통해 사용자가 설정한 시간에 묵상을 할 수 있도록 하는 묵상(QT) 서비스 입니다.
 
-> 서비스 종료
+--- 
+
+주의 말씀의 맛이 내게 어찌 그리 단지요 내 입에 꿀보다 더 다니이다 - 시편 119:103
+
+하루에 밥은 세번이나 먹으면서 말씀은 하루에 한번 밖에 안 보고, 심지어 그것조차 힘든 것일까?
+
+하루 세번 밥 먹듯이 묵상을 하다보면 말씀의 고픔이 해결되지 않을까?
+
+배가 고프면 배꼽시계가 알려주듯이 말씀의 고픔을 알려주고 채워주는 말씀의 배꼽시계 삼시묵상!
+
+이제는 삼시세끼 밥을 먹듯이 묵상을 해보자! 삼시묵상과 함께!
 
 ---
 
 #### 📚 Stack
 
-- Swift 4.0
-- Node.js
-- MongoDB
-- AWS(EC2)
-- KakaoSDK(Login)
+- Swift 5.0
+- Firebase Analytics
+- Firebase Auth (Apple Login 연동)
+- Firebase Firestore (DataBase)
 
 ---
 
