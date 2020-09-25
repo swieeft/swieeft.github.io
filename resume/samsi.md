@@ -20,7 +20,7 @@ background: /assets/headerBackground.png
 
 👨🏻‍💻 **Role** : 기획, 디자인, 앱 개발, DB 설계 전체를 담당하였습니다.
 
-🍎 **AppStore** : 심사 진행중
+🍎 **AppStore** : [삼시묵상](https://apps.apple.com/us/app/id1533036054)
 
 ---
 
