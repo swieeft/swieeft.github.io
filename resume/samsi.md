@@ -28,6 +28,8 @@ background: /assets/headerBackground.png
 
 하루 세번 로컬 푸시 알림을 통해 사용자가 설정한 시간에 묵상을 할 수 있도록 하는 묵상(QT) 서비스 입니다.
 
+iOS14 사용자는 위젯을 사용할 수 있습니다. 위젯에는 오늘의 말씀이 표시 되도록 개발하였습니다.
+
 --- 
 
 주의 말씀의 맛이 내게 어찌 그리 단지요 내 입에 꿀보다 더 다니이다 - 시편 119:103
@@ -48,12 +50,15 @@ background: /assets/headerBackground.png
 - Firebase Analytics
 - Firebase Auth (Apple Login 연동)
 - Firebase Firestore (DataBase)
+- iOS WidgetKit
 
 ---
 
 #### 📸 ScreenShot
 
 <div style="width:100%; margin:0 auto;">
+<a href="#"><img style="width:25%" src="https://raw.githubusercontent.com/swieeft/resume/master/images/samsi5.png" align="left"></a>
+<a href="#"><img style="width:25%" src="https://raw.githubusercontent.com/swieeft/resume/master/images/samsi6.png" align="left"></a>
 <a href="#"><img style="width:25%" src="https://raw.githubusercontent.com/swieeft/resume/master/images/samsi1.png" align="left"></a>
 <a href="#"><img style="width:25%" src="https://raw.githubusercontent.com/swieeft/resume/master/images/samsi2.png" align="left"></a>
 <a href="#"><img style="width:25%" src="https://raw.githubusercontent.com/swieeft/resume/master/images/samsi3.png" align="left"></a>
