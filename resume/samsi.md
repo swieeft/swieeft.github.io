@@ -16,7 +16,7 @@ background: /assets/headerBackground.png
 🗓 **Period** : 
 
 - 2017\. 12\. 01 ~ 2018\. 02\. 27 (1차 버전)
-- 2020\. 09\. 01 ~ 2020\. 09\. 24 (2차 버전) 
+- 2020\. 09\. 01 ~ 현재
 
 👨🏻‍💻 **Role** : 기획, 디자인, 앱 개발, DB 설계 전체를 담당하였습니다.
 
@@ -57,10 +57,11 @@ iOS14 사용자는 위젯을 사용할 수 있습니다. 위젯에는 오늘의 
 #### 📸 ScreenShot
 
 <div style="width:100%; margin:0 auto;">
-<a href="#"><img style="width:25%" src="https://raw.githubusercontent.com/swieeft/resume/master/images/samsi5.png" align="left"></a>
-<a href="#"><img style="width:25%" src="https://raw.githubusercontent.com/swieeft/resume/master/images/samsi6.png" align="left"></a>
 <a href="#"><img style="width:25%" src="https://raw.githubusercontent.com/swieeft/resume/master/images/samsi1.png" align="left"></a>
 <a href="#"><img style="width:25%" src="https://raw.githubusercontent.com/swieeft/resume/master/images/samsi2.png" align="left"></a>
 <a href="#"><img style="width:25%" src="https://raw.githubusercontent.com/swieeft/resume/master/images/samsi3.png" align="left"></a>
 <a href="#"><img style="width:25%" src="https://raw.githubusercontent.com/swieeft/resume/master/images/samsi4.png" align="left"></a>
+<a href="#"><img style="width:25%" src="https://raw.githubusercontent.com/swieeft/resume/master/images/samsi5.png" align="left"></a>
+<a href="#"><img style="width:25%" src="https://raw.githubusercontent.com/swieeft/resume/master/images/samsi6.png" align="left"></a>
+<a href="#"><img style="width:25%" src="https://raw.githubusercontent.com/swieeft/resume/master/images/samsi7.png" align="left"></a>
 </div>
