@@ -15,7 +15,6 @@ background: /assets/headerBackground.png
 
 🗓 **Period** : 
 
-- 2017\. 12\. 01 ~ 2018\. 02\. 27 (1차 버전)
 - 2020\. 09\. 01 ~ 현재
 
 👨🏻‍💻 **Role** : 기획, 디자인, 앱 개발, DB 설계 전체를 담당하였습니다.
@@ -50,6 +49,7 @@ iOS14 사용자는 위젯을 사용할 수 있습니다. 위젯에는 오늘의 
 - Firebase Analytics
 - Firebase Auth (Apple Login 연동)
 - Firebase Firestore (DataBase)
+- KakaoLink
 - iOS WidgetKit
 
 ---
