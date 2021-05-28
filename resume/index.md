@@ -25,13 +25,13 @@ background: /assets/headerBackground.png
 
 ---
 
-📬 **E-Mail** : [swieeft89@gmail.com](mailto:swieeft89@gmail.com)
+📬  **E-Mail** : [swieeft89@gmail.com](mailto:swieeft89@gmail.com)
 
-<img class="icon" src="/assets/images/resume/blog.png"/> **Blog** : [뀔뀔(swieeft)의 개발새발기](https://swieeft.github.io/)
+<img class="icon" src="/assets/images/resume/blog.png"/>**Blog** : [뀔뀔(swieeft)의 개발새발기](https://swieeft.github.io/)
 
-<img class="icon" src="/assets/images/resume/github.png"/> **Github** : [swieeft](https://github.com/swieeft)
+<img class="icon" src="/assets/images/resume/github.png"/>**Github** : [swieeft](https://github.com/swieeft)
 
-<img class="icon" src="/assets/images/resume/linkedin.png"/> **LinkedIn** : [LinkedIn Profile](www.linkedin.com/in/swieeft)
+<img class="icon" src="/assets/images/resume/linkedin.png"/>**LinkedIn** : [프로필](www.linkedin.com/in/swieeft)
 
 ---
 
@@ -135,12 +135,12 @@ background: /assets/headerBackground.png
 
 <img class="icon" src="/assets/images/resume/samsi_icon.png"/>[삼시묵상](/resume/samsi.html)
 
-➰ [SwieeftUIBezierPath](/resume/swieeftuibezierpath.html)
+➰  [SwieeftUIBezierPath](/resume/swieeftuibezierpath.html)
 
-🏞 [SwieeftImageViewer](/resume/swieeftimageviewer.html)
+🏞  [SwieeftImageViewer](/resume/swieeftimageviewer.html)
 
-⚙ [CustomView](/resume/customview.html)
+⚙  [CustomView](/resume/customview.html)
 
-🖌 [DrawingRecorder](/resume/drawingrecorder.html)
+🖌  [DrawingRecorder](/resume/drawingrecorder.html)
 
-⚫ [DotPattern-UIBezierPath](/resume/dotpattern_uibezierpath.html)
+⚫  [DotPattern-UIBezierPath](/resume/dotpattern_uibezierpath.html)
