@@ -19,7 +19,7 @@ background: /assets/headerBackground.png
 
 ---
 
-🍭달콤한 개발을 꿈꾸는 개발자
+🍭 달콤한 개발을 꿈꾸는 개발자
 
 사람들의 생활을 더욱 편하고 즐겁게 그리고 행복하게 만들어 주는 개발자가 되겠습니다.
 
@@ -27,9 +27,11 @@ background: /assets/headerBackground.png
 
 📬 **E-Mail** : [swieeft89@gmail.com](mailto:swieeft89@gmail.com)
 
-📝 **Blog** : [뀔뀔(swieeft)의 개발새발기](https://swieeft.github.io/)
+<img class="icon" src="/assets/images/resume/blog.png"/> **Blog** : [뀔뀔(swieeft)의 개발새발기](https://swieeft.github.io/)
 
-🐙 **Github** : [swieeft](https://github.com/swieeft)
+<img class="icon" src="/assets/images/resume/github.png"/> **Github** : [swieeft](https://github.com/swieeft)
+
+<img class="icon" src="/assets/images/resume/linkedin.png"/> **LinkedIn** : [LinkedIn Profile](www.linkedin.com/in/swieeft)
 
 ---
 
@@ -51,7 +53,7 @@ background: /assets/headerBackground.png
 
 ---
 
-- **[인바이츠헬스케어](https://invites.co.kr/)**
+- **[인바이츠헬스케어](https://inviteshealth.com/)**
     - 2020\. 03\. 16 ~ 현재
     - 프리랜서
     - iOS App 개발
