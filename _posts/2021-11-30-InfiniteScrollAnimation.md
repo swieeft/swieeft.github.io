@@ -33,7 +33,7 @@ tags: [ios, swift]
 
 이렇게 이미지를 자연스럽게 만들어 주어야 애니메이션을 제대로 구현할 수 있는데요.
 
-위의 이미지 세개를 애니메이션으로 구현하면 다음과 같이 동작하는 것을 볼 수 있습니다.
+위의 이미지를 애니메이션으로 구현하면 다음과 같이 동작하는 것을 볼 수 있습니다.
 
 ![InfiniteScrollAnimation3.gif](/assets/images/posts/2021-11-30/InfiniteScrollAnimation3.gif)
 
